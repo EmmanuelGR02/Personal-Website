@@ -6,9 +6,10 @@ body {
 
 header {
     background-color: rgb(29, 27, 27);
-    padding: 20px;
+    padding: 15px;
+    font-size: 15px;
     margin: 0;
-    width: 97.9%;
+    width: 98.5%;
 }
 
 nav {
@@ -94,5 +95,6 @@ footer {
     background-color: rgb(29, 27, 27);
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 5px;
+    font-size: 14px;
 }
