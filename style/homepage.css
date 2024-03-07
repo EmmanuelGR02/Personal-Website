@@ -40,6 +40,17 @@ nav ul li a:hover {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    animation: fadeInText 7s ease forwards;
+    opacity: 0;
+}
+
+@keyframes fadeInText {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .hello {
