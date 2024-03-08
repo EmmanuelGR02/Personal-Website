@@ -1,15 +1,40 @@
 
+// get switch components
+const backgroundSwitch = document.getElementById('backgroundSwitch');
+const slider = document.querySelector('#backgroundSwitch .slider');
+const helloName = document.querySelectorAll('.hello, .name');
+let isBackgroundBlack = true;
 
-function change_background_black() {
-    body.style.change_backgroundColor = 'black'
-}
-function change_background_gray() {
-    body.style.change_backgroundColor = 'gray'
-}
+// set the start background colors
+document.body.style.backgroundColor = 'black';
+slider.style.backgroundColor = 'black'; 
+slider.classList.add('checked'); 
+slider.style.backgroundColor = 'black'; 
 
-window.onload = function() {
-    document.body.style.display = 'none';
-    document.body.offsetHeight;
-    document.body.style.display = '';
-  };
+// Add event listener for switch toggle
+backgroundSwitch.addEventListener('change', function() {
+    if (isBackgroundBlack) {
+        // Change background to white and text color to black
+        document.body.style.backgroundColor = 'white';
+        helloName.forEach(element => {
+            element.style.color = 'black';
+        });
+        // Toggle switch colors
+        slider.classList.remove('checked');
+        slider.style.backgroundColor = 'white';
+    } else {
+        // Change background to black and text color to white
+        document.body.style.backgroundColor = 'black';
+        helloName.forEach(element => {
+            element.style.color = 'white';
+        });
+        slider.classList.add('checked');
+        slider.style.backgroundColor = 'black';
+    }
+    isBackgroundBlack = !isBackgroundBlack;
+});
+
+
+
+
 
