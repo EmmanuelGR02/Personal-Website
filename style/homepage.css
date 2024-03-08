@@ -8,6 +8,7 @@ header {
     background-color: rgb(29, 27, 27);
     font-size: 15px;
     margin: 0;
+    padding: 10px;
     width: 100%;
     position: fixed;
     top: 0;
@@ -192,6 +193,7 @@ nav ul li a:hover {
 
 .me_image {
     width: 20%;
+    margin-top: 100px;
     height: auto; 
     margin-right: 20px; 
 }
