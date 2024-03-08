@@ -7,4 +7,9 @@ function change_background_gray() {
     body.style.change_backgroundColor = 'gray'
 }
 
+window.onload = function() {
+    document.body.style.display = 'none';
+    document.body.offsetHeight;
+    document.body.style.display = '';
+  };
 

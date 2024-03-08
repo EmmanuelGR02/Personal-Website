@@ -4,16 +4,18 @@ body {
     font-family: Arial, sans-serif;
 }
 
+/* ------------------- */
 header {
     background-color: rgb(29, 27, 27);
     font-size: 15px;
-    margin: 0;
     padding: 10px;
     width: 100%;
-    position: fixed;
     top: 0;
-    left: 0;
+    position: relative;
+    margin-top: -10px;
+    margin-left: -20px;
 }
+
 /* fade text to image */
 .contact {
     position: fixed;
@@ -23,19 +25,18 @@ header {
     position: absolute;
     top: 0;
     left: 0;
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-left: 10px; 
     opacity: 1;
-    transition: opacity .5s ease;
+    transition: opacity .2s ease .1s;
     z-index: 1;
 }
 .contact_img {
-    position: center;
-    width: 40   px;
+    width: 40px;
     height: auto;
-    top: 0;
-    left: 0;
+    margin-left: 10px;
     opacity: 0;
-    transition: opacity .5s ease;
+    transition: opacity .2s ease .1s;
 }
 .contact:hover .contact_text {
     opacity: 0;
@@ -44,27 +45,26 @@ header {
     opacity: 1;
 }
 
+/* ------------------- */
 .projects {
     position: relative;
     display: inline-block;
 }
 .projects_text {
     position: absolute;
-    margin-top: 20px;
+    margin-top: 10px;
     top: 0;
     left: 0;
     opacity: 1;
-    transition: opacity .5s ease;
+    transition: opacity .2s ease .1s;
     z-index: 1;
 }
 .projects_img {
-    position: center;
     width: 35px;
     height: auto;
-    top: 0;
-    left: 0;
+    margin-left: 10px;
     opacity: 0;
-    transition: opacity .5s ease;
+    transition: opacity .2s ease .1s;
 }
 .projects:hover .projects_text {
     opacity: 0;
@@ -73,18 +73,18 @@ header {
     opacity: 1;
 }
 
-
+/* ------------------- */
 .about {
     position: relative;
     display: inline-block;
 }
 .about_text {
     position: absolute;
-    margin-top: 20px;
+    margin-top: 10px;
     top: 0;
     left: 0;
     opacity: 1;
-    transition: opacity .5s ease;
+    transition: opacity .2s ease .1s;
     z-index: 1;
 }
 .about_img {
@@ -94,7 +94,7 @@ header {
     top: 0;
     left: 0;
     opacity: 0;
-    transition: opacity .5s ease;
+    transition: opacity .2s ease .1s;
 }
 .about:hover .about_text {
     opacity: 0;
@@ -103,18 +103,18 @@ header {
     opacity: 1;
 }
 
-
+/* ------------------- */
 .home {
     position: relative;
     display: inline-block;
 }
 .home_text {
     position: absolute;
-    margin-top: 20px;
+    margin-top: 10px;
     top: 0;
     left: 0;
     opacity: 1;
-    transition: opacity .5s ease;
+    transition: opacity .2s ease .1s;
     z-index: 1;
 }
 .home_img {
@@ -124,7 +124,7 @@ header {
     top: 0;
     left: 0;
     opacity: 0;
-    transition: opacity .5s ease;
+    transition: opacity .2s ease .1s;
 }
 .home:hover .home_text {
     opacity: 0;
@@ -133,31 +133,29 @@ header {
     opacity: 1;
 }
 
+/* ------------------- */
 nav {
     text-align: center;
 }
-
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
-
 nav ul li {
     display: inline;
     margin-right: 20px;
 }
-
 nav ul li a {
     text-decoration: none;
     color: white;
     transition: color 0.3s;
 }
-
 nav ul li a:hover {
     color: gray;
 }
 
+/* ------------------- */
 .container {
     text-align: center;
     max-width: 1200px;
@@ -166,7 +164,6 @@ nav ul li a:hover {
     opacity: 0;
     display: flex;
 }
-
 @keyframes fadeInText {
     from {
         opacity: 0;
@@ -175,22 +172,18 @@ nav ul li a:hover {
         opacity: 1;
     }
 }
-
 .content {
     display: flex;
     align-items: center; 
 }
-
 .hello {
     color: white;
     font-weight: 800;
     margin-top: 100px;
 }
-
 .name {
     color: white;
 }
-
 .me_image {
     width: 20%;
     margin-top: 100px;
@@ -198,30 +191,7 @@ nav ul li a:hover {
     margin-right: 20px; 
 }
 
-a {
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-a:hover {
-    color: white;
-}
-
-.btn {
-    background-color: dimgray;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.btn:hover {
-    background-color: gray;
-}
-
+/* ------------------- */
 footer {
     position: fixed;
     bottom: 0;
