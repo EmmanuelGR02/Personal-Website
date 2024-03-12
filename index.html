@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="javascript/homepage.js"></script>
     <link rel="stylesheet" href="style/homepage.css">
     <title>Emmanuel Gutierrez Rivera</title>
 </head>
@@ -54,6 +55,13 @@
         <p>&copy; 2024 Emmanuel Gutierrez Rivera. All rights reserved.</p>
     </footer>
 
-    <script src="javascript/homepage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.3/firebase-analytics.js"></script>
+    <script>
+        // Initialize Firebase
+        const app = firebase.initializeApp(firebaseConfig);
+        const analytics = firebase.analytics();
+    </script>
+
 </body>
 </html>
