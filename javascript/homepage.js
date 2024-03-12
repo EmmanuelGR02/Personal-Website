@@ -1,58 +1,85 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // get switch contents
-    const backgroundSwitch = document.getElementById('backgroundSwitch');
-    const slider = document.querySelector('#backgroundSwitch .slider');
-    const helloName = document.querySelectorAll('.hello, .name');
-    let isBackgroundBlack = true;
-
-    // set the start background colors
-    document.body.style.backgroundColor = 'black';
-    slider.style.backgroundColor = 'black'; 
-    slider.classList.add('checked'); 
-    slider.style.backgroundColor = 'black'; 
-
-    // Add event listener for switch toggle
-    backgroundSwitch.addEventListener('change', function() {
-        if (isBackgroundBlack) {
-            // Change background to white and text color to black
-            document.body.style.backgroundColor = 'white';
-            helloName.forEach(element => {
-                element.style.color = 'black';
+    // Function to fetch and insert header
+    function fetchAndInsertHeader() {
+        return fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.querySelector('header').innerHTML = data;
             });
-            // Toggle switch colors
-            slider.classList.remove('checked');
-            slider.style.backgroundColor = 'white';
-        } else {
-            // Change background to black and text color to white
-            document.body.style.backgroundColor = 'black';
-            helloName.forEach(element => {
-                element.style.color = 'white';
-            });
-            slider.classList.add('checked');
-            slider.style.backgroundColor = 'black';
-        }
-        isBackgroundBlack = !isBackgroundBlack;
-    });
+    }
 
-
-    // keep the header links in an icon while in that page
-    window.onload = function() {
-        // Get the current page URL
-        var currentPage = window.location.pathname;
+    // Fetch and insert header, then execute the rest of the code
+    fetchAndInsertHeader().then(() => {
+        console.log("Header inserted successfully.");
         
+        // Access the backgroundSwitch element
+        const backgroundSwitch = document.getElementById('backgroundSwitch');
+        const slider = document.querySelector('#backgroundSwitch .slider');
+        const helloName = document.querySelectorAll('.hello, .name');
+        let isBackgroundBlack = true;
+
+        // set the start background colors
+        document.body.style.backgroundColor = 'black';
+        slider.style.backgroundColor = 'black'; 
+        slider.classList.add('checked'); 
+        slider.style.backgroundColor = 'black'; 
+
+        // Add event listener for switch toggle
+        backgroundSwitch.addEventListener('change', function() {
+            if (isBackgroundBlack) {
+                // Change background to white and text color to black
+                document.body.style.backgroundColor = 'white';
+                helloName.forEach(element => {
+                    element.style.color = 'black';
+                });
+                // Toggle switch colors
+                slider.classList.remove('checked');
+                slider.style.backgroundColor = 'white';
+            } else {
+                // Change background to black and text color to white
+                document.body.style.backgroundColor = 'black';
+                helloName.forEach(element => {
+                    element.style.color = 'white';
+                });
+                slider.classList.add('checked');
+                slider.style.backgroundColor = 'black';
+            }
+            isBackgroundBlack = !isBackgroundBlack;
+        });
+
+        // Set opacity for specific page elements based on the current page
+        var currentPage = window.location.href;
+        console.log("Current page:", currentPage);
         if (currentPage.includes("index.html")) {
+            console.log("Setting opacity for home page elements");
             document.getElementById('home_text').style.opacity = 0;
             document.getElementById('home_img').style.opacity = 1;
-        } else if (currentPage.includes("about.html")) {
+        }
+        if (currentPage.includes("about.html")) {
+            console.log("Setting opacity for about page elements");
             document.getElementById('about_text').style.opacity = 0;
             document.getElementById('about_img').style.opacity = 1;
-        } else if (currentPage.includes("projects.html")) {
+        }
+        if (currentPage.includes("projects.html")) {
+            console.log("Setting opacity for projects page elements");
             document.getElementById('projects_text').style.opacity = 0;
             document.getElementById('projects_img').style.opacity = 1;
-        }else if (currentPage.includes("contact.html")) {
+        }
+        if (currentPage.includes("contact.html")) {
+            console.log("Setting opacity for contact page elements");
             document.getElementById('contact_text').style.opacity = 0;
             document.getElementById('contact_img').style.opacity = 1;
         }
-    };
+    }).catch(error => {
+        console.error("Error fetching or inserting header:", error);
+    });
 
+    // Fetch and insert footer
+    fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.querySelector('footer').innerHTML = data;
+        }).catch(error => {
+            console.error("Error fetching or inserting footer:", error);
+        });
 });

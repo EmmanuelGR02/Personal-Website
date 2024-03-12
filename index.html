@@ -3,41 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="javascript/homepage.js"></script>
+    <script src="javascript/homepage.js" type="module"></script>
     <link rel="stylesheet" href="style/homepage.css">
     <title>Emmanuel Gutierrez Rivera</title>
 </head>
 <body>
-    <!-- header containing the links to my work and info -->
-    <header>
-        <label class="switch" id="backgroundSwitch">
-            <input type="checkbox">
-            <span class="slider round"></span>
-        </label>
-        <nav>
-            <ul> 
-                <li><a class="home" href="index.html">
-                    <img class="home_img" id="home_img" src="images/home_icon.png">
-                    <span class="home_text" id="home_text">Home</span>
-                </a></li>
-                
-                <li><a class="about" href="html/about.html">
-                    <img class="about_img" id="about_img" src="images/about_icon.png">
-                    <span class="about_text" id="about_text">About</span>
-                </a></li>
 
-                <li><a class="projects" href="html/projects.html">
-                    <img class="projects_img" src="images/projects_icon.png">
-                    <span class="projects_text">Projetcs</span>
-                </a></li>
+    <header></header>
 
-                <li><a class="contact" href="html/contact.html">
-                    <img class="contact_img" src="images/contact_icon.png">
-                    <span class="contact_text">Contact</span>
-                </a></li>
-            </ul>
-        </nav>
-    </header>
+    <footer></footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Fetch and insert header
+            fetch('header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.querySelector('header').innerHTML = data;
+                });
+
+            // Fetch and insert footer
+            fetch('footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.querySelector('footer').innerHTML = data;
+                });
+        });
+    </script>
 
     <!-- greeting and image container -->
     <div class="container">
@@ -49,19 +41,6 @@
             </div>
         </div>
     </div>
-
-    <!-- footer -->
-    <footer>
-        <p>&copy; 2024 Emmanuel Gutierrez Rivera. All rights reserved.</p>
-    </footer>
-
-    <script src="https://www.gstatic.com/firebasejs/9.6.3/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.6.3/firebase-analytics.js"></script>
-    <script>
-        // Initialize Firebase
-        const app = firebase.initializeApp(firebaseConfig);
-        const analytics = firebase.analytics();
-    </script>
 
 </body>
 </html>
