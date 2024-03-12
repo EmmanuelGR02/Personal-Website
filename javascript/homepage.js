@@ -33,4 +33,26 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         isBackgroundBlack = !isBackgroundBlack;
     });
+
+
+    // keep the header links in an icon while in that page
+    window.onload = function() {
+        // Get the current page URL
+        var currentPage = window.location.pathname;
+        
+        if (currentPage.includes("index.html")) {
+            document.getElementById('home_text').style.opacity = 0;
+            document.getElementById('home_img').style.opacity = 1;
+        } else if (currentPage.includes("about.html")) {
+            document.getElementById('about_text').style.opacity = 0;
+            document.getElementById('about_img').style.opacity = 1;
+        } else if (currentPage.includes("projects.html")) {
+            document.getElementById('projects_text').style.opacity = 0;
+            document.getElementById('projects_img').style.opacity = 1;
+        }else if (currentPage.includes("contact.html")) {
+            document.getElementById('contact_text').style.opacity = 0;
+            document.getElementById('contact_img').style.opacity = 1;
+        }
+    };
+
 });
