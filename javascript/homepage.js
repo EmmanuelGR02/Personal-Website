@@ -81,5 +81,5 @@ document.addEventListener('DOMContentLoaded', function() {
             document.querySelector('footer').innerHTML = data;
         }).catch(error => {
             console.error("Error fetching or inserting footer:", error);
-         });
-    });
+        });
+});
