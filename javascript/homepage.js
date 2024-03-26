@@ -50,19 +50,23 @@ document.addEventListener('DOMContentLoaded', function() {
         // Set opacity for specific page elements based on the current page
         var currentPage = window.location.href;
         console.log("Current page:", currentPage);
-        if (currentPage.includes("index.html") || currentPage.includes('https://egr-portfolio.netlify.app')) {
+        if (currentPage.includes("index.html")) {
+            console.log("Setting opacity for home page elements");
             document.getElementById('home_text').style.opacity = 0;
             document.getElementById('home_img').style.opacity = 1;
         }
-        if (currentPage.includes("about.html") || currentPage.includes('https://egr-portfolio.netlify.app/about')) {
+        if (currentPage.includes("about.html")) {
+            console.log("Setting opacity for about page elements");
             document.getElementById('about_text').style.opacity = 0;
             document.getElementById('about_img').style.opacity = 1;
         }
-        if (currentPage.includes("projects.html") || currentPage.includes('https://egr-portfolio.netlify.app/projects')) {
+        if (currentPage.includes("projects.html")) {
+            console.log("Setting opacity for projects page elements");
             document.getElementById('projects_text').style.opacity = 0;
             document.getElementById('projects_img').style.opacity = 1;
         }
-        if (currentPage.includes("contact.html") || currentPage.includes('https://egr-portfolio.netlify.app/contact')) {
+        if (currentPage.includes("contact.html")) {
+            console.log("Setting opacity for contact page elements");
             document.getElementById('contact_text').style.opacity = 0;
             document.getElementById('contact_img').style.opacity = 1;
         }
