@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Set opacity for specific page elements based on the current page
         var currentPage = window.location.href;
         console.log("Current page:", currentPage);
-        if (currentPage.includes("index.html") || currentPage == "https://egr-portfolio.netlify.app") {
+        if (currentPage.includes("index.html") || currentPage == "https://egr-portfolio.netlify.app/") {
             document.getElementById('home_text').style.opacity = 0;
             document.getElementById('home_img').style.opacity = 1;
         }
