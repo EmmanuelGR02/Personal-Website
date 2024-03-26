@@ -15,14 +15,15 @@ document.addEventListener('DOMContentLoaded', function() {
         // Access the backgroundSwitch element
         const backgroundSwitch = document.getElementById('backgroundSwitch');
         const slider = document.querySelector('#backgroundSwitch .slider');
-        const helloName = document.querySelectorAll('.hello, .name');
+        const helloName = document.querySelectorAll('.hello, .name, .msg');
+        const msg_div = document.querySelectorAll('.msg_div');
         let isBackgroundBlack = true;
 
         // set the start background colors
         document.body.style.backgroundColor = 'black';
-        slider.style.backgroundColor = 'black'; 
+        slider.style.backgroundColor = 'black';
         slider.classList.add('checked'); 
-        slider.style.backgroundColor = 'black'; 
+        slider.style.backgroundColor = 'black';
 
         // Add event listener for switch toggle
         backgroundSwitch.addEventListener('change', function() {
@@ -32,6 +33,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 helloName.forEach(element => {
                     element.style.color = 'black';
                 });
+                msg_div.forEach(element => {
+                    element.style.backgroundColor = 'white';
+                    element.classList.remove('white-shadow');
+                    element.classList.add('black-shadow');
+                    element.classList.add('black-shadow:hover');
+                });
+                
                 // Toggle switch colors
                 slider.classList.remove('checked');
                 slider.style.backgroundColor = 'white';
@@ -40,6 +48,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 document.body.style.backgroundColor = 'black';
                 helloName.forEach(element => {
                     element.style.color = 'white';
+                });
+                msg_div.forEach(element => {
+                    element.style.backgroundColor = 'black';
+                    element.classList.remove('black-shadow');
+                    element.classList.add('white-shadow');
+                    element.classList.add('white-shadow:hover');
                 });
                 slider.classList.add('checked');
                 slider.style.backgroundColor = 'black';
@@ -78,7 +92,7 @@ document.addEventListener('DOMContentLoaded', function() {
     fetch('footer.html') 
         .then(response => response.text())
         .then(data => {
-            document.querySelector('footer').innerHTML = data;
+            document.querySelector('footer').innerHTML = data
         }).catch(error => {
             console.error("Error fetching or inserting footer:", error);
         });
