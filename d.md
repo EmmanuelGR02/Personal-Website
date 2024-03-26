@@ -3,7 +3,7 @@
 ---
 
 # CWE-798: Use of Hard-coded Credentials
-    * 'The product contains hard-coded credentials, such as a password or cryptographic key, which it uses for its own inbound authentication, outboud communication to external components, or encryption of internal data.` [Link CWE-798](https://cwe.mitre.org/data/definitions/798.html)
+    * 'The product contains hard-coded credentials, such as a password or cryptographic key, which it uses for its own inbound authentication, outboud communication to external components, or encryption of internal data.` https://cwe.mitre.org/data/definitions/798.html
  
 ---
  
