@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://www.gstatic.com/firebasejs/9.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.2/firebase-database.js"></script>
     <script src="javascript/homepage.js" type="module"></script>
+    <script src="javascript/database.js" type="module"></script>
     <link rel="stylesheet" href="style/homepage.css">
     <title>Emmanuel Gutierrez Rivera</title>
 </head>
@@ -44,6 +47,11 @@
 
     <!-- additional message -->
     <div class="msg_div">
+        <!-- Add this to your HTML file where you want to trigger the database operations -->
+        <button onclick="setData()">Set Data</button>
+        <button onclick="updateData()">Update Data</button>
+        <button onclick="pushData()">Push Data</button>
+
         <p class="msg">Welcome to my website! Thanks for visiting. Please take your time to explore my work. If you have any quesstions or would like to connect, feel free to reach out. Happy browsing!</p>
     </div>
 
