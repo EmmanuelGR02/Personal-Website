@@ -12,10 +12,35 @@ body {
     padding: 1%;
     margin-top: 2%;
     text-align: center;
-    background-color: darkgray; 
+    background-color: white; 
+    box-shadow: 3px 10px 50px 2px white;
+    transition: box-shadow 0.3s, transform 0.3s; 
+    animation: fadeInText 7s ease forwards;
     border-radius: 15px;
+    opacity: .8;
+    border: 2px solid black;
+    cursor: pointer;
+}
+.aboutmemsg_div.white-shadow {
+    box-shadow: 3px 10px 50px 2px white;
+}
+.aboutmemsg_div.black-shadow {
+    box-shadow: 3px 10px 60px 3px black;
+}
+.aboutmemsg_div.black-shadow:hover {
+    box-shadow: 6px 8px 7px 1px black;
+    transform: translate(-5px);
+}
+.aboutmsg_div.white-shadow:hover {
+    box-shadow: 6px 8px 7px 1px white;
+    transform: translate(-5px);
+}
+.aboutmemsg_div:hover {
+    box-shadow: 6px 8px 7px 1px white;
+    transform: translate(-5px);
 }
 .aboutme_msg {
     font-size: 18px;
     color: black;
+    font-weight: bold;
 }

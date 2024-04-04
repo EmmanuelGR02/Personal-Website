@@ -71,6 +71,32 @@ document.addEventListener('DOMContentLoaded', function() {
         if (currentPage.includes("about.html") || currentPage == "https://egr-portfolio.netlify.app/about") {
             document.getElementById('about_text').style.opacity = 0;
             document.getElementById('about_img').style.opacity = 1;
+
+            // color change logic for about page
+
+            backgroundSwitch.addEventListener('change', function() {
+                const aboutmemsg_div = document.querySelectorAll('.aboutmemsg_div');
+                if (isBackgroundBlack) {
+                    aboutmemsg_div.forEach(element => {
+                        element.style.color = 'white';
+                    });
+                    aboutmemsg_div.forEach(element => {
+                        element.classList.add('white-shadow');
+                        element.classList.remove('black-shadow');
+                        element.classList.add('white-shadow:hover') 
+                    });
+                } else {
+                    aboutmemsg_div.forEach(element => {
+                        element.style.color = 'black'; 
+                    });
+                    aboutmemsg_div.forEach(element => {
+                        element.classList.add('black-shadow');
+                        element.classList.remove('white-shadow');
+                        element.classList.add('black-shadow:hover')
+                    });
+                }
+            });
+
         }
         if (currentPage.includes("projects.html") || currentPage == "https://egr-portfolio.netlify.app/projects") {
             document.getElementById('projects_text').style.opacity = 0;

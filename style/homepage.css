@@ -226,7 +226,7 @@ nav ul li a:hover {
 .hello {
     color: white;
     font-weight: 800;
-    margin-top: .5%;
+    margin-top: .1%;
 }
 .name {
     color: white;
@@ -235,7 +235,7 @@ nav ul li a:hover {
     width: 20%;
     margin-top: 3%;
     height: auto; 
-    margin-right: 20px; 
+    margin-right: 3%; 
 }
 
 /* ------------------------------------------------------------------- */
