@@ -1,0 +1,20 @@
+body {
+    background-color: black;
+    color: white;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.aboutmemsg_div {
+    width: 70%;
+    height: 8%;
+    margin-right: 15%;
+    margin-left: 15%;
+    padding: 2%;
+    text-align: center;
+    background-color: darkgray; 
+    border-radius: 15px;
+}
+.aboutme_msg {
+    font-size: 18px;
+    color: black;
+}
