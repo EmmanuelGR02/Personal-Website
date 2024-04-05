@@ -58,7 +58,7 @@ body {
     border-radius: 15px;
     box-shadow: 3px 10px 30px 2px white;
     transition: box-shadow 0.3s, transform 0.3s; 
-    animation: fadeInText 7s ease forwards;
+    animation: fadeInText 3s ease forwards;
 }
 .skills_text {
     font-size: 20px;
