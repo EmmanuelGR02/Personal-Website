@@ -99,3 +99,8 @@ body {
 .style1_div:hover {
     transform: translateY(-20%);
 }
+@media (hover: none) {
+    .skills_container + .style1_div {
+        transform: translateY(-50px); 
+    }
+}
