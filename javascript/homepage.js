@@ -61,6 +61,8 @@ document.addEventListener('DOMContentLoaded', function() {
             isBackgroundBlack = !isBackgroundBlack;
         });
 
+        
+
         // Set opacity for specific page elements based on the current page
         var currentPage = window.location.href;
         console.log("Current page:", currentPage);
@@ -73,7 +75,6 @@ document.addEventListener('DOMContentLoaded', function() {
             document.getElementById('about_img').style.opacity = 1;
 
             // color change logic for about page
-
             backgroundSwitch.addEventListener('change', function() {
                 const aboutmemsg_div = document.querySelectorAll('.aboutmemsg_div');
                 if (isBackgroundBlack) {

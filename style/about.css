@@ -13,7 +13,7 @@ body {
     margin-top: 2%;
     text-align: center;
     background-color: white; 
-    box-shadow: 3px 10px 30px 2px white;
+    box-shadow: 1px 5px 8px 1px white;
     transition: box-shadow 0.3s, transform 0.3s; 
     animation: fadeInText 7s ease forwards;
     border-radius: 15px;
@@ -21,10 +21,10 @@ body {
     cursor: pointer;
 }
 .aboutmemsg_div.white-shadow {
-    box-shadow: 3px 10px 30px 2px white;
+    box-shadow: 5px 5px 15px 2px white;
 }
 .aboutmemsg_div.black-shadow {
-    box-shadow: 3px 10px 30px 3px black;
+    box-shadow: 3px 3px 5px 6px black;
 }
 .aboutmemsg_div.black-shadow:hover {
     box-shadow: 6px 8px 7px 1px black;
@@ -49,16 +49,18 @@ body {
 .style1_div {
     background-color: white;
     color: black;
-    width: 10%;
+    width: 200px;
     text-align: center;
     padding-top: 0%;
     border: 3px solid black;
-    margin-top: 5%;
+    margin-top: -9%;
     margin-right: 3%;
     border-radius: 15px;
-    box-shadow: 3px 10px 30px 2px white;
+    box-shadow: 1px 5px 8px 1px white;
     transition: box-shadow 0.3s, transform 0.3s; 
     animation: fadeInText 3s ease forwards;
+    transform: translateY(10%); 
+    transition: transform 0.3s ease;
 }
 .skills_text {
     font-size: 20px;
@@ -68,20 +70,32 @@ body {
 .skills_container {
     background-color: white;
     width: 97%;
-    padding: 20px; /* Example value, adjust as needed */
-    margin: 0; /* Example value, adjust as needed */
+    margin-top: 8%;
+    padding: 20px;
     border-radius: 15px;
-    margin-top: -1.5%;
     border: 3px solid black;
-    box-shadow: 3px 10px 30px 2px white;
+    box-shadow: 1px 5px 8px 1px white;
     transition: box-shadow 0.3s, transform 0.3s; 
     animation: fadeInText 7s ease forwards;
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 10px; 
+    position: relative;
+    z-index: 1;
 }
+
 .skill {
     background-color: lightgray;
     color: black;
     padding: 10px;
     margin: 5px;
     border-radius: 5px;
-    display: inline-block;
+}
+
+.skills_container:hover + .style1_div {
+    transform: translateY(-20%); 
+}
+.style1_div:hover {
+    transform: translateY(-20%);
 }
