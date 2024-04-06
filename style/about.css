@@ -53,7 +53,7 @@ body {
     text-align: center;
     padding-top: 0%;
     border: 3px solid black;
-    margin-top: -9%;
+    margin-top: -18%;
     margin-right: 3%;
     border-radius: 15px;
     box-shadow: 1px 5px 8px 1px white;
@@ -87,10 +87,18 @@ body {
 
 .skill {
     background-color: lightgray;
+    text-align: center;
     color: black;
     padding: 10px;
     margin: 5px;
     border-radius: 5px;
+    width: 100px;
+    word-wrap: break-word;
+}
+
+.firebase_logo {
+    width: 50px;
+    height: 50px;
 }
 
 .skills_container:hover + .style1_div {
