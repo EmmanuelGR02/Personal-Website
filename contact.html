@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="javascript/homepage.js" type="module"></script>
+        <script src="javascript/contact.js" type="module"></script>
         <link rel="stylesheet" href="style/homepage.css">
         <title>Contact</title>
     </head>
@@ -13,7 +14,19 @@
 
         <footer></footer>
 
-        <center><H1>Contact</H1></center>
+        <center><div id="form_container" class="form_container" style="margin-top: 10%;">
+            <form action="" id="contact_form">
+
+                <div class="input_box">
+                    <input id="form_name" class="form_name" type="text" placeholder="Your name" style="height: 30px;">  
+                </div>
+
+                <div class="input_box">
+                    <button type="submit" style="width: 100ps;">Submit</button>
+                </div>
+
+            </form>
+        </div></center>
 
         <script>
             document.addEventListener('DOMContentLoaded', function() {
@@ -32,6 +45,9 @@
                     });
             });
         </script>
+
+        <!-- Firebase database link -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
     </body>
 
 </html>
