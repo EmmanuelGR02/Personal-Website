@@ -47,9 +47,10 @@ body {
 /* ****************************************************************** */
 
 .skills_container {
-    background-color: white;
+    background-color: black;
     width: 97%;
     margin-top: 8%;
+    margin-bottom: 5%;
     padding: 20px;
     border-radius: 15px;
     border: 3px solid black;
@@ -72,6 +73,7 @@ body {
     margin: 5px;
     border-radius: 5px;
     width: 200px;
+    height: 200px;
     word-wrap: break-word;
     display: inline-block;
     overflow: hidden; 
@@ -79,20 +81,394 @@ body {
 }
 .skills img {
     border-radius: 50%;
-    transition: transform 0.5s ease-out; 
+    animation: float 5s infinite alternate; 
+    box-shadow: 1px 5px 8px 1px white;
+    width: 50px;
+    height: 50px;
 }
+
 .skills:hover img {
     transform: rotate(360deg); 
     box-shadow: 2px 4px 3px 1px white;
     transform: translate(-5px);
 }
-@media (hover: hover) {
-    .skills:hover img {
-        transform: rotate(360deg); 
-    }
-}
+
 .img_logo {
     width: 50px;
     height: 50px;
+}
+@keyframes float {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    50% {
+        transform: translate(10px, 10px); /* Adjust the values for desired floating motion */
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+/*  *********************** HTML *********************** */
+.skills_HTML {
+    background-color: black;
+    text-align: center;
+    color: black;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    width: 200px;
+    height: 200px;
+    background-image: url('/images/html_background.png'); /* https://wallpapers.com */
+    background-size: cover;
+    background-position: center;
+    word-wrap: break-word;
+    display: inline-block;
+    overflow: hidden; 
+    position: relative;
+}
+.skills_HTML img {
+    border-radius: 50%;
+    animation: float 5s infinite alternate; 
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 1px 5px 8px 1px white;
+    background-color: black;
+    width: 50px;
+    height: 50px;
+}
+.skills_HTML:hover img {
+    transform: rotate(360deg); 
+    box-shadow: 2px 4px 3px 1px lightslategray;
+    transform: translate(-5px);
+}
+
+/*  *********************** CSS *********************** */
+.skills_CSS {
+    background-color: black;
+    text-align: center;
+    color: black;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    width: 200px;
+    height: 200px;
+    background-image: url('/images/css_background.jpg'); /* https://wallpapers.com */
+    background-size: cover;
+    background-position: center;
+    word-wrap: break-word;
+    display: inline-block;
+    overflow: hidden; 
+    position: relative;
+}
+.skills_CSS img {
+    border-radius: 50%;
+    animation: float 5s infinite alternate; 
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 1px 5px 8px 1px white;
+    background-color: black;
+    width: 50px;
+    height: 50px;
+}
+.skills_CSS:hover img {
+    transform: rotate(360deg); 
+    box-shadow: 2px 4px 3px 1px lightslategray;
+    transform: translate(-5px);
+}
+
+/*  *********************** Javascript *********************** */
+.skills_javascript {
+    background-color: black;
+    text-align: center;
+    color: black;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    width: 200px;
+    height: 200px;
+    background-image: url('/images/javascript_background.png'); /* https://wallpapers.com */
+    background-size: cover;
+    background-position: center;
+    word-wrap: break-word;
+    display: inline-block;
+    overflow: hidden; 
+    position: relative;
+}
+.skills_javascript img {
+    border-radius: 50%;
+    animation: float 5s infinite alternate; 
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 1px 5px 8px 1px white;
+    background-color: black;
+    width: 50px;
+    height: 50px;
+}
+.skills_javascript:hover img {
+    transform: rotate(360deg); 
+    box-shadow: 2px 4px 3px 1px lightslategray;
+    transform: translate(-5px);
+}
+
+/*  *********************** Java *********************** */
+.skills_java {
+    background-color: black;
+    text-align: center;
+    color: black;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    width: 200px;
+    height: 200px;
+    background-image: url('/images/java_background.png'); /* https://www.geeksforgeeks.org/java/# */
+    background-size: contain;
+    background-position: center;
+    word-wrap: break-word;
+    display: inline-block;
+    overflow: hidden; 
+    position: relative;
+}
+.skills_java img {
+    border-radius: 50%;
+    animation: float 5s infinite alternate; 
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 1px 5px 8px 1px white;
+    background-color: black;
+    width: 50px;
+    height: 50px;
+}
+.skills_java:hover img {
+    transform: rotate(360deg); 
+    box-shadow: 2px 4px 3px 1px lightslategray;
+    transform: translate(-5px);
+}
+
+/*  *********************** Kotlin *********************** */
+.skills_kotlin {
+    background-color: black;
+    text-align: center;
+    color: black;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    width: 200px;
+    height: 200px;
+    background-image: url('/images/kotlin_background.png'); /* https://fossbytes.com/kotlin-google-favorite-programming-language-android-development/ */
+    background-size: contain;
+    background-position: 10%;
+    word-wrap: break-word;
+    display: inline-block;
+    overflow: hidden; 
+    position: relative;
+}
+.skills_kotlin img {
+    border-radius: 50%;
+    animation: float 5s infinite alternate; 
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 1px 5px 8px 1px white;
+    background-color: black;
+    width: 50px;
+    height: 50px;
+}
+.skills_kotlin:hover img {
+    transform: rotate(360deg); 
+    box-shadow: 2px 4px 3px 1px lightslategray;
+    transform: translate(-5px);
+}
+
+/*  *********************** XML *********************** */
+.skills_XML {
+    background-color: black;
+    text-align: center;
+    color: black;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    width: 200px;
+    height: 200px;
+    background-image: url('/images/XML_background.jpg'); /* https://www.quora.com/Is-XML-compiled-or-interpreted*/
+    background-size: cover;
+    background-position: center;
+    word-wrap: break-word;
+    display: inline-block;
+    overflow: hidden; 
+    position: relative;
+}
+.skills_XML img {
+    border-radius: 50%;
+    animation: float 5s infinite alternate; 
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 1px 5px 8px 1px white;
+    background-color: black;
+    width: 50px;
+    height: 50px;
+}
+.skills_XML:hover img {
+    transform: rotate(360deg); 
+    box-shadow: 2px 4px 3px 1px lightslategray;
+    transform: translate(-5px);
+}
+
+/*  *********************** Python *********************** */
+.skills_python {
+    background-color: black;
+    text-align: center;
+    color: black;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    width: 200px;
+    height: 200px;
+    background-image: url('/images/python_background.png'); /* https://www.mooc.org/blog/what-is-python-used-for */
+    background-size: cover;
+    background-position: center;
+    word-wrap: break-word;
+    display: inline-block;
+    overflow: hidden; 
+    position: relative;
+}
+.skills_python img {
+    border-radius: 50%;
+    animation: float 5s infinite alternate; 
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 1px 5px 8px 1px white;
+    background-color: black;
+    width: 50px;
+    height: 50px;
+}
+.skills_python:hover img {
+    transform: rotate(360deg); 
+    box-shadow: 2px 4px 3px 1px lightslategray;
+    transform: translate(-5px);
+}
+
+/*  *********************** Arduino *********************** */
+.skills_arduino {
+    background-color: black;
+    text-align: center;
+    color: black;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    width: 200px;
+    height: 200px;
+    background-image: url('/images/arduino_background.png'); /* https://botpad.hashnode.dev/basics-of-arduino */
+    background-size: contain;
+    background-position: center;
+    word-wrap: break-word;
+    display: inline-block;
+    overflow: hidden; 
+    position: relative;
+}
+.skills_arduino img {
+    border-radius: 50%;
+    animation: float 5s infinite alternate; 
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 1px 5px 8px 1px white;
+    background-color: black;
+    width: 50px;
+    height: 50px;
+}
+.skills_arduino:hover img {
+    transform: rotate(360deg); 
+    box-shadow: 2px 4px 3px 1px lightslategray;
+    transform: translate(-5px);
+}
+
+/*  *********************** Git *********************** */
+.skills_git {
+    background-color: black;
+    text-align: center;
+    color: black;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    width: 10%;
+    height: 200px;
+    background-image: url('/images/git_background.png'); /* https://zhiminzhan.medium.com/10-minutes-guide-to-git-version-control-for-testers-f58e059bb5e7 */
+    background-size: contain;
+    background-position: center;
+    word-wrap: break-word;
+    display: inline-block;
+    overflow: hidden; 
+    position: relative;
+}
+.skills_git img {
+    border-radius: 50%;
+    animation: float 5s infinite alternate; 
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 1px 5px 8px 1px white;
+    background-color: black;
+    width: 50px;
+    height: 50px;
+}
+.skills_git:hover img {
+    transform: rotate(360deg); 
+    box-shadow: 2px 4px 3px 1px lightslategray;
+    transform: translate(-5px);
+}
+
+/*  *********************** Bash *********************** */
+.skills_bash {
+    background-color: black;
+    text-align: center;
+    color: black;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    width: 200px;
+    height: 200px;
+    background-image: url('/images/bash_background.jpg'); /* https://www.goglides.dev/roshan_thapa/bash-scripting-tutorial-3o9i */
+    background-size: contain;
+    background-position: center;
+    word-wrap: break-word;
+    display: inline-block;
+    overflow: hidden; 
+    position: relative;
+}
+.skills_bash img {
+    border-radius: 50%;
+    animation: float 5s infinite alternate; 
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 1px 5px 8px 1px white;
+    background-color: black;
+    width: 50px;
+    height: 50px;
+}
+.skills_bash:hover img {
+    transform: rotate(360deg); 
+    box-shadow: 2px 4px 3px 1px lightslategray;
+    transform: translate(-5px);
+}
+
+/*  *********************** Firebase *********************** */
+.skills_firebase {
+    background-color: black;
+    text-align: center;
+    color: black;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    width: 200px;
+    height: 200px;
+    background-image: url('/images/firebase_background.png'); /*  */ 
+    background-size: contain;
+    background-position: center;
+    word-wrap: break-word;
+    display: inline-block;
+    overflow: hidden; 
+    position: relative;
+}
+.skills_firebase img {
+    border-radius: 50%;
+    animation: float 5s infinite alternate; 
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 1px 5px 8px 1px white;
+    background-color: black;
+    width: 50px;
+    height: 50px;
+}
+.skills_firebase:hover img {
+    transform: rotate(360deg); 
+    box-shadow: 2px 4px 3px 1px lightslategray;
+    transform: translate(-5px);
 }
 
