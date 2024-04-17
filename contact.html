@@ -5,6 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="javascript/homepage.js" type="module"></script>
         <script src="javascript/contact.js" type="module"></script>
+        <!-- add css file to html file-->
+        <link rel="stylesheet" href="style/contact.css">
         <link rel="stylesheet" href="style/homepage.css">
         <title>Contact</title>
     </head>
@@ -14,16 +16,30 @@
 
         <footer></footer>
 
-        <center><div id="form_container" class="form_container" style="margin-top: 10%;">
-            <form action="" id="contact_form">
+        <!-- For to allow website viewers to send me a message -->
 
-                <div class="input_box">
-                    <input id="form_name" class="form_name" type="text" placeholder="Your name" style="height: 30px;">  
-                </div>
+        <center><div id="form_container" class="form_container">
+            <h1>Contact info</h1>
+            <hr>
+            <form action="" class="contact_form" id="contact_form">
 
-                <div class="input_box">
-                    <button type="submit" style="width: 100ps;">Submit</button>
-                </div>
+            <!-- input boxes. (name, lastname, email, message and button)-->
+            <div class="input_box"> 
+                <input id="form_name" class="form_name" type="text" placeholder="your name">
+            </div>
+            <div class="input_box"> 
+                <input id="form_lastname" class="form_lastname" type="text" placeholder="your lastname">
+            </div>
+            <div class="input_box"> 
+                <input id="form_email" class="form_email" type="email" placeholder="your email">
+            </div>
+            <div class="input_box"> 
+                <textarea id="form_message" class="form_message" type="text" placeholder="your message"></textarea>
+            </div>
+
+            <div class="input_box"> 
+                <button class="form_button" type="submit">Submit</button>
+            </div>
 
             </form>
         </div></center>
