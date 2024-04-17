@@ -1,15 +1,15 @@
 /* style main div*/
 .form_container {
-    width: 15%;
+    width: 300px;
     margin-top: 10%;
     border: 3px solid white;
     border-radius: 30px;
-    box-shadow: 1px 4px 8px 1px white;
-    transition: box-shadow 0.3s, transform 0.3s;
+    box-shadow: 2px 4px 8px 1px white;
+    transition: box-shadow 0.5s, transform 0.5s;
     cursor: pointer;
 }
 .form_container:hover {
-    box-shadow: 2px 5px 7px 2px white;
+    box-shadow: 4px 5px 7px 2px white;
     transform: -5px;
 }
 
@@ -62,8 +62,10 @@
     font-size: 20px;
     border-radius: 30px;
     margin-bottom: 10px;
-    box-shadow: 1px 4px 6px 1px white;
+    box-shadow: 1px 2px 3px 1px white;
+    transition: box-shadow 0.3s, transform 0.3s; 
+
 }
 .form_button:hover {
-    box-shadow: 2px 5px 7px 2px white;
+    box-shadow: 1px 3px 4px 2px white;
 }

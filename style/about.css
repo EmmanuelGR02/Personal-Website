@@ -57,7 +57,13 @@ body {
     border: 2px solid white;
     border-radius: 30px;
     background-color: black;
-    animation: fadeInText 7s ease forwards;
+    animation: fadeInText 7s ease forwards; 
+    transition: box-shadow 0.3s, transform 0.3s; 
+    box-shadow: 1px 2px 3px 1px white;
+    cursor: pointer;
+} 
+.skills_tab:hover {
+    box-shadow: 1px 3px 4px 2px white;
 }
 
 .skills_container {
@@ -68,7 +74,7 @@ body {
     padding: 20px;
     border-radius: 15px;
     border: 3px solid black;
-    box-shadow: 1px 5px 8px 1px white;
+    box-shadow: 3px 3px 6px 3px lightgray;
     transition: box-shadow 0.3s, transform 0.3s; 
     animation: fadeInText 7s ease forwards;
     display: flex; 
@@ -139,6 +145,9 @@ body {
     overflow: hidden; 
     position: relative;
 }
+.skills_HTML:hover {
+    border-color: red; 
+}
 .skills_HTML img {
     border-radius: 50%;
     animation: float 5s infinite alternate; 
@@ -169,6 +178,9 @@ body {
     display: inline-block;
     overflow: hidden; 
     position: relative;
+}
+.skills_CSS:hover {
+    border-color: red; 
 }
 .skills_CSS img {
     border-radius: 50%;
@@ -201,6 +213,9 @@ body {
     overflow: hidden; 
     position: relative;
 }
+.skills_javascript:hover {
+    border-color: red; 
+}
 .skills_javascript img {
     border-radius: 50%;
     animation: float 5s infinite alternate; 
@@ -231,6 +246,9 @@ body {
     display: inline-block;
     overflow: hidden; 
     position: relative;
+}
+.skills_java:hover {
+    border-color: red; 
 }
 .skills_java img {
     border-radius: 50%;
@@ -263,6 +281,9 @@ body {
     overflow: hidden; 
     position: relative;
 }
+.skills_kotlin:hover {
+    border-color: red; 
+}
 .skills_kotlin img {
     border-radius: 50%;
     animation: float 5s infinite alternate; 
@@ -293,6 +314,9 @@ body {
     display: inline-block;
     overflow: hidden; 
     position: relative;
+}
+.skills_XML:hover {
+    border-color: red; 
 }
 .skills_XML img {
     border-radius: 50%;
@@ -325,6 +349,9 @@ body {
     overflow: hidden; 
     position: relative;
 }
+.skills_python:hover {
+    border-color: red; 
+}
 .skills_python img {
     border-radius: 50%;
     animation: float 5s infinite alternate; 
@@ -356,6 +383,9 @@ body {
     overflow: hidden; 
     position: relative;
 }
+.skills_arduino:hover {
+    border-color: red; 
+}
 .skills_arduino img {
     border-radius: 50%;
     animation: float 5s infinite alternate; 
@@ -379,13 +409,16 @@ body {
     padding: 10px;
     margin: 5px;
     border-radius: 5px;
-    width: 10%;
+    width: 200px;
     height: 200px;
     border: 2px solid white;
     word-wrap: break-word;
     display: inline-block;
     overflow: hidden; 
     position: relative;
+}
+.skills_git:hover {
+    border-color: red; 
 }
 .skills_git img {
     border-radius: 50%;
@@ -417,6 +450,9 @@ body {
     display: inline-block;
     overflow: hidden; 
     position: relative;
+}
+.skills_bash:hover {
+    border-color: red; 
 }
 .skills_bash img {
     border-radius: 50%;
@@ -450,11 +486,9 @@ body {
     position: relative;
     transition: border-color 0.3s ease-in-out; /* Add transition for smooth effect */
 }
-
 .skills_firebase:hover {
     border-color: red; 
 }
-
 .skills_firebase img {
     border-radius: 50%;
     animation: float 5s infinite alternate; 
@@ -464,7 +498,6 @@ body {
     width: 50px;
     height: 50px;
 }
-
 .skills_firebase:hover img {
     transform: rotate(360deg); 
     box-shadow: 2px 4px 3px 1px lightslategray;
