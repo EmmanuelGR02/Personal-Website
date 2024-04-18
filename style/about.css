@@ -48,9 +48,9 @@ body {
 
 .skills_tab {
     color: white;
-    width: 100px;
+    width: 200px;
     height: 30px;
-    margin-top: 6.3%;
+    margin-top: 6%;
     position: absolute;
     z-index: 999;
     text-align: center;
@@ -139,7 +139,7 @@ body {
     border-radius: 5px;
     width: 200px;
     height: 200px;
-    border: 2px solid white;
+    border: 1px solid white;
     word-wrap: break-word;
     display: inline-block;
     overflow: hidden; 
@@ -173,7 +173,7 @@ body {
     border-radius: 5px;
     width: 200px;
     height: 200px;
-    border: 2px solid white;
+    border: 1px solid white;
     word-wrap: break-word;
     display: inline-block;
     overflow: hidden; 
@@ -207,7 +207,7 @@ body {
     border-radius: 5px;
     width: 200px;
     height: 200px;
-    border: 2px solid white;
+    border: 1px solid white;
     word-wrap: break-word;
     display: inline-block;
     overflow: hidden; 
@@ -241,7 +241,7 @@ body {
     border-radius: 5px;
     width: 200px;
     height: 200px;
-    border: 2px solid white;
+    border: 1px solid white;
     word-wrap: break-word;
     display: inline-block;
     overflow: hidden; 
@@ -275,7 +275,7 @@ body {
     border-radius: 5px;
     width: 200px;
     height: 200px;
-    border: 2px solid white;
+    border: 1px solid white;
     word-wrap: break-word;
     display: inline-block;
     overflow: hidden; 
@@ -309,7 +309,7 @@ body {
     border-radius: 5px;
     width: 200px;
     height: 200px;
-    border: 2px solid white;
+    border: 1px solid white;
     word-wrap: break-word;
     display: inline-block;
     overflow: hidden; 
@@ -343,7 +343,7 @@ body {
     border-radius: 5px;
     width: 200px;
     height: 200px;
-    border: 2px solid white;
+    border: 1px solid white;
     word-wrap: break-word;
     display: inline-block;
     overflow: hidden; 
@@ -377,7 +377,7 @@ body {
     border-radius: 5px;
     width: 200px;
     height: 200px;
-    border: 2px solid white;
+    border: 1px solid white;
     word-wrap: break-word;
     display: inline-block;
     overflow: hidden; 
@@ -411,7 +411,7 @@ body {
     border-radius: 5px;
     width: 200px;
     height: 200px;
-    border: 2px solid white;
+    border: 1px solid white;
     word-wrap: break-word;
     display: inline-block;
     overflow: hidden; 
@@ -445,7 +445,7 @@ body {
     border-radius: 5px;
     width: 200px;
     height: 200px;
-    border: 2px solid white;
+    border: 1px solid white;
     word-wrap: break-word;
     display: inline-block;
     overflow: hidden; 
@@ -479,7 +479,7 @@ body {
     border-radius: 5px;
     width: 200px;
     height: 200px;
-    border: 2px solid white;
+    border: 1px solid white;
     word-wrap: break-word;
     display: inline-block;
     overflow: hidden; 
