@@ -487,7 +487,7 @@ body {
     transition: border-color 0.3s ease-in-out; /* Add transition for smooth effect */
 }
 .skills_firebase:hover {
-    border-color: red; 
+    border-color: black; 
 }
 .skills_firebase img {
     border-radius: 50%;

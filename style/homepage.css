@@ -241,7 +241,6 @@ nav ul li a:hover {
 
 /* ------------------------------------------------------------------- */
 .msg_div {
-    width: 25%;
     padding: .5%;
     text-align: center;
     position: absolute;
@@ -253,6 +252,20 @@ nav ul li a:hover {
     animation: fadeInText 7s ease forwards;
     opacity: 0;
     cursor: pointer;
+}
+
+/* For big monitors */
+@media screen and (min-width: 1024px) {
+    .msg_div {
+        width: 25%;
+    }
+}
+
+/* For phones */
+@media screen and (max-width: 600px) {
+    .msg_div {
+        width: 400px;
+    }
 }
 
 .msg_div.black-shadow {
