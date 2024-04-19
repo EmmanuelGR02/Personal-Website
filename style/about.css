@@ -13,7 +13,7 @@ body {
     margin-top: 2%;
     text-align: center;
     background-color: black; 
-    box-shadow: 1px 5px 8px 1px white;
+    box-shadow: 0px 0px 15px 1px white;
     transition: box-shadow 0.3s, transform 0.3s; 
     animation: fadeInText 7s ease forwards;
     border-radius: 15px;
@@ -50,32 +50,52 @@ body {
     color: white;
     width: 100px;
     height: 30px;
-    margin-top: 6.3%;
-    position: absolute;
+    position: absolute; 
+    top: 38%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
     z-index: 999;
     text-align: center;
     border: 2px solid white;
     border-radius: 30px;
     background-color: black;
     animation: fadeInText 7s ease forwards;
+    box-shadow: 0 0 5px 1px lightgray;
+    cursor: pointer;
+    transition: transform .5s ease; 
+}
+
+.skills_tab:hover {
+    transform: translate(-50%, -50%) rotate(360deg); /* Apply rotation on hover */
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 20px 0; 
+    z-index: 999; 
 }
 
 .skills_container {
     background-color: black;
-    width: 97%;
+    width: 90%;
     margin-top: 8%;
     margin-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
     padding: 20px;
     border-radius: 15px;
     border: 3px solid black;
-    box-shadow: 1px 5px 8px 1px white;
+    box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.5); 
     transition: box-shadow 0.3s, transform 0.3s; 
-    animation: fadeInText 7s ease forwards;
     display: flex; 
     flex-wrap: wrap; 
     justify-content: center; 
+    align-items: center; 
     gap: 10px; 
-    position: relative;
     z-index: 1;
 }
 
@@ -93,6 +113,8 @@ body {
     overflow: hidden; 
     position: relative; 
 }
+
+
 .skills img {
     border-radius: 50%;
     animation: float 5s infinite alternate; 
@@ -138,6 +160,7 @@ body {
     display: inline-block;
     overflow: hidden; 
     position: relative;
+    z-index: 1;
 }
 .skills_HTML img {
     border-radius: 50%;
@@ -216,7 +239,7 @@ body {
     transform: translate(-5px);
 }
 
-/*  *********************** Java *********************** */
+/* *********************** Java *********************** */
 .skills_java {
     background-color: black;
     text-align: center;
@@ -379,7 +402,7 @@ body {
     padding: 10px;
     margin: 5px;
     border-radius: 5px;
-    width: 10%;
+    width: 200px;
     height: 200px;
     border: 2px solid white;
     word-wrap: break-word;
