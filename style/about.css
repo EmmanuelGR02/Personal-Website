@@ -51,7 +51,8 @@ body {
     width: 100px;
     height: 30px;
     position: absolute; 
-    top: 38%; 
+    top: 40%; 
+    margin-bottom: 10px;
     left: 50%; 
     transform: translate(-50%, -50%); 
     z-index: 999;
@@ -67,12 +68,13 @@ body {
 
 .skills_tab:hover {
     transform: translate(-50%, -50%) rotate(360deg); /* Apply rotation on hover */
+    background-color: darkslategray;
 }
 
 .footer {
     position: absolute;
     bottom: 0;
-    width: 100%;
+    width: 0%;
     color: white;
     text-align: center;
     padding: 20px 0; 
@@ -82,7 +84,7 @@ body {
 .skills_container {
     background-color: black;
     width: 90%;
-    margin-top: 8%;
+    margin-top: 9%;
     margin-bottom: 5%;
     margin-left: auto;
     margin-right: auto;
