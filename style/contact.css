@@ -62,10 +62,10 @@
     font-size: 20px;
     border-radius: 30px;
     margin-bottom: 10px;
-    box-shadow: 1px 2px 3px 1px white;
+    box-shadow: 0px 0px 5px 1px white;
     transition: box-shadow 0.3s, transform 0.3s; 
 
 }
 .form_button:hover {
-    box-shadow: 1px 3px 4px 2px white;
+    box-shadow: 1px 2px 2px 1px white;
 }

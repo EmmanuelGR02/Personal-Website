@@ -50,31 +50,37 @@ body {
     color: white;
     width: 100px;
     height: 30px;
-    position: absolute; 
-    top: 40%; 
-    margin-bottom: 10px;
-    left: 50%; 
-    transform: translate(-50%, -50%); 
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     z-index: 999;
     text-align: center;
     border: 2px solid white;
     border-radius: 30px;
     background-color: black;
-    animation: fadeInText 7s ease forwards;
     box-shadow: 0 0 5px 1px lightgray;
     cursor: pointer;
-    transition: transform .5s ease; 
+    transition: transform .5s ease;
+    animation: floating 2s infinite alternate;
 }
-
+@keyframes floating {
+    0% {
+        transform: translate(-50%, -50%) translateY(0);
+    }
+    100% {
+        transform: translate(-50%, -50%) translateY(-10px);
+    }
+}
 .skills_tab:hover {
-    transform: translate(-50%, -50%) rotate(360deg); /* Apply rotation on hover */
-    background-color: darkslategray;
+    transform: translate(-50%, -50%) rotate(360deg); 
+    box-shadow: 2px 2px 5px 2px lightgray;
 }
 
 .footer {
     position: absolute;
     bottom: 0;
-    width: 0%;
+    width: 100%;
     color: white;
     text-align: center;
     padding: 20px 0; 
@@ -84,7 +90,7 @@ body {
 .skills_container {
     background-color: black;
     width: 90%;
-    margin-top: 9%;
+    margin-top: 8%;
     margin-bottom: 5%;
     margin-left: auto;
     margin-right: auto;
@@ -140,7 +146,7 @@ body {
         transform: translate(0px, 0px);
     }
     50% {
-        transform: translate(10px, 10px); /* Adjust the values for desired floating motion */
+        transform: translate(10px, 10px); 
     }
     100% {
         transform: translate(0px, 0px);
