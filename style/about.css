@@ -66,13 +66,13 @@ body {
 }
 @media screen and (max-width: 480px) {
     .skills_tab {
-        top: 300px;
+        top: 400px;
     }
 }
 
 @media screen and (min-width: 481px) {
     .skills_tab {
-        top: 40%;
+        top: 38%;
     }
 }
 @keyframes fadeInText {
