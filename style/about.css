@@ -69,7 +69,6 @@ body {
         top: 340px;
     }
 }
-
 @media screen and (min-width: 481px) {
     .skills_tab {
         top: 38%;
@@ -91,7 +90,6 @@ body {
         transform: translate(-50%, -50%) translateY(-10px);
     }
 }
-
 .skills_tab:hover {
     transform: translate(-50%, -50%) rotate(360deg); 
     box-shadow: 2px 2px 5px 2px lightgray;
@@ -111,7 +109,6 @@ body {
 .skills_container {
     background-color: black;
     width: 90%;
-    margin-top: 13%;
     margin-bottom: 5%;
     margin-left: auto;
     margin-right: auto;
@@ -127,6 +124,16 @@ body {
     align-items: center; 
     gap: 10px; 
     z-index: 1;
+}
+@media screen and (max-width: 480px) {
+    .skills_container {
+        margin-top: 30px;
+    }
+}
+@media screen and (min-width: 481px) {
+    .skills_container {
+        margin-top: 8%;
+    }
 }
 
 .skills {
