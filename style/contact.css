@@ -1,3 +1,40 @@
+
+.title {
+    margin-bottom: -8%
+}
+
+.socials_container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    margin-bottom: -3%;
+  }
+  
+  .social_icon {
+    text-align: center;
+    margin: 10px;
+    margin: 0 30px;
+  }
+  
+  .social_icon a {
+    display: inline-block;
+    text-decoration: none;
+  }
+  
+  .social_icon img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .social_icon span {
+    color: white;
+    font-size: 14px;
+  }
+
+
 /* style main div*/
 .form_container {
     width: 300px;

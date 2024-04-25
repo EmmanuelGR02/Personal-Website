@@ -121,7 +121,6 @@ body {
     flex-wrap: wrap; 
     justify-content: center; 
     animation: fadeInText 5s ease forwards;
-    align-items: center; 
     gap: 10px; 
     z-index: 1;
 }
@@ -141,7 +140,7 @@ body {
     text-align: center;
     color: black;
     padding: 10px;
-    margin: 5px;
+    margin: 5px auto;
     border-radius: 5px;
     width: 200px;
     height: 200px;
