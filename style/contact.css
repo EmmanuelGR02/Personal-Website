@@ -6,7 +6,6 @@
         margin-bottom: -3%; 
     }
 }
-
 @media screen and (min-width: 481px) {
     .title {
         margin-bottom: -8%; 
@@ -23,7 +22,6 @@
         margin-bottom: 0%; 
     }
 }
-
 @media screen and (min-width: 481px) {
     .socials_container{
         margin-bottom: -3%; 
@@ -53,8 +51,8 @@ text-decoration: none;
 }
 
 .social_icon img {
-width: 80px;
-height: 80px;
+width: 60px;
+height: 60px;
 border-radius: 50%;
 display: block;
 margin-bottom: 5px;
