@@ -477,6 +477,9 @@ body {
     overflow: hidden; 
     position: relative;
 }
+.skills_bash:hover {
+border-color: lightslategray;
+}
 .skills_bash img {
     border-radius: 50%;
     animation: float 5s infinite alternate; 
@@ -509,9 +512,8 @@ body {
     position: relative;
     transition: border-color 0.3s ease-in-out; /* Add transition for smooth effect */
 }
-
 .skills_firebase:hover {
-    border-color: red; 
+    border-color: lightslategray; 
 }
 
 .skills_firebase img {
