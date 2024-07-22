@@ -95,37 +95,6 @@ body {
     box-shadow: 2px 2px 5px 2px lightgray;
 }
 
-.skills_info {
-    color: white;
-    width: 7px;
-    height: 7px;
-    position: absolute;
-    padding: 10px;
-    left: 55%;
-    z-index: 999;
-    text-align: center;
-    border: 2px solid white;
-    border-radius: 100px;
-    background-color: black;
-    box-shadow: 0 0 8px 1.5px lightgray;
-    cursor: pointer;
-    transition: transform .5s ease;
-    animation: fadeInText 10s ease forwards, floating 2s infinite alternate;
-}
-@media screen and (max-width: 480px) {
-    .skills_info {
-        top: 340px;
-    }
-}
-@media screen and (min-width: 481px) {
-    .skills_info {
-        top: 38%;
-    }
-}
-.skills_info:hover {
-    box-shadow: 2px 2px 2px 1.3x lightgray;
-}
-
 
 .footer {
     position: absolute;
