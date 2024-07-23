@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
     var tab_text = document.getElementById("skills_tab");
 
     // Initially hide the skills container
-    skillsContainer.style.display = "none";
+    skillsContainer.style.display = "block";
 
     // Toggle visibility of the skills container when the tab is clicked
     skillsTab.addEventListener("click", function() {
