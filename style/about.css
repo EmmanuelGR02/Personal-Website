@@ -399,6 +399,37 @@ body {
     transform: translate(-5px);
 }
 
+/*  *********************** C++ *********************** */
+.skills_cplusplus {
+    background-color: black;
+    text-align: center;
+    color: black;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    width: 200px;
+    height: 200px;
+    border: 2px solid white;
+    word-wrap: break-word;
+    display: inline-block;
+    overflow: hidden; 
+    position: relative;
+}
+.skills_cplusplus img {
+    border-radius: 50%;
+    animation: float 5s infinite alternate; 
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 1px 5px 8px 1px white;
+    background-color: black;
+    width: 50px;
+    height: 50px;
+}
+.skills_cplusplus:hover img {
+    transform: rotate(360deg); 
+    box-shadow: 2px 4px 3px 1px lightslategray;
+    transform: translate(-5px);
+}
+
 /*  *********************** Arduino *********************** */
 .skills_arduino {
     background-color: black;
