@@ -3,7 +3,7 @@
 Welcome to my personal portfolio website! This project showcases my work, skills, and information about myself. It is designed to provide a simple yet elegant way for potential employers, colleagues, and peers to explore my projects and get in touch with me.
 
 ## Link to website
-- [Website Link](egr-portfolio.netlify.app)
+- [Website Link](https://egr-portfolio.netlify.app)
 
 ## Table of Contents
 
@@ -18,10 +18,6 @@ Welcome to my personal portfolio website! This project showcases my work, skills
 - [Deployment](#deployment)
 - [Getting Started](#getting-started)
 - [License](#license)
-
-## Live Demo
-
-Check out the live demo of my website here: [My Portfolio](egr-portfolio.netlify.app)
 
 ## Overview
 
