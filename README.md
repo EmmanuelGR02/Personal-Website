@@ -21,7 +21,7 @@ Welcome to my personal portfolio website! This project showcases my work, skills
 
 ## Live Demo
 
-Check out the live demo of my website here: [My Portfolio](https://your-netlify-url-here.netlify.app)
+Check out the live demo of my website here: [My Portfolio](egr-portfolio.netlify.app)
 
 ## Overview
 
