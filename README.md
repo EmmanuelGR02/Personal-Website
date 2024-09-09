@@ -2,6 +2,9 @@
 
 Welcome to my personal portfolio website! This project showcases my work, skills, and information about myself. It is designed to provide a simple yet elegant way for potential employers, colleagues, and peers to explore my projects and get in touch with me.
 
+## Link to website
+- [Website Link](egr-portfolio.netlify.app)
+
 ## Table of Contents
 
 - [Live Demo](#live-demo)
@@ -68,29 +71,8 @@ This website serves as a digital portfolio showcasing my journey as a Computer S
 
 ## Deployment
 
-The website is deployed using **Netlify** and can be accessed by anyone via the live demo link provided above. Netlify handles continuous deployment whenever changes are pushed to the repository.
+The website is deployed using **Netlify** and can be accessed by anyone via the link provided above. Netlify handles continuous deployment whenever changes are pushed to the repository.
 
-## Getting Started
-
-To run this project locally, follow these steps:
-
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/your-username/your-portfolio.git
-    ```
-
-2. Navigate to the project directory:
-    ```bash
-    cd your-portfolio
-    ```
-
-3. Open the `index.html` file in your browser to view the main page.
-
-4. (Optional) If you want to set up Firebase for storing contact form submissions:
-   - Create a Firebase project and copy your configuration details.
-   - Update the Firebase configuration in your `contact.js` file.
-
-5. To deploy your own version of this website, sign up for a free Netlify account and link this repository.
 
 ## License
 
