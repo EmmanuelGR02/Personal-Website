@@ -38,11 +38,15 @@ function submitForm(e) {
 const saveInfo = (name, lastname, email, message) => {
     var newContactForm = contactForm.push();
 
+    // get current date and time
+    var timeStamp = new Date().toLocaleDateString('en-US', { hour12: flase});
+
     newContactForm.set({
         name: name,
         lastname: lastname,
         email: email,
-        message: message
+        message: message,
+        timeStamp: timeStamp
     }).then(() => {
         console.log("Data saved successfully");
     }).catch((error) => {
