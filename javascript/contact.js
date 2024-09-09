@@ -39,7 +39,7 @@ const saveInfo = (name, lastname, email, message) => {
     var newContactForm = contactForm.push();
 
     // get current date and time
-    var timeStamp = new Date().toLocaleDateString('en-US', { hour12: false});
+    var timeStamp = new Date().toISOString('en-US', { hour12: false});
 
     newContactForm.set({
         name: name,
