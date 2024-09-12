@@ -199,6 +199,9 @@ body {
     position: relative;
     z-index: 1;
 }
+.skills_HTML:hover {
+    border-color: lightslategray;
+}
 .skills_HTML img {
     border-radius: 50%;
     animation: float 5s infinite alternate; 
@@ -229,6 +232,9 @@ body {
     display: inline-block;
     overflow: hidden; 
     position: relative;
+}
+.skills_CSS:hover {
+    border-color: lightslategray;
 }
 .skills_CSS img {
     border-radius: 50%;
@@ -261,6 +267,9 @@ body {
     overflow: hidden; 
     position: relative;
 }
+.skills_javascript:hover {
+    border-color: lightslategray;
+}
 .skills_javascript img {
     border-radius: 50%;
     animation: float 5s infinite alternate; 
@@ -291,6 +300,9 @@ body {
     display: inline-block;
     overflow: hidden; 
     position: relative;
+}
+.skills_java:hover {
+    border-color: lightslategray;
 }
 .skills_java img {
     border-radius: 50%;
@@ -323,6 +335,9 @@ body {
     overflow: hidden; 
     position: relative;
 }
+.skills_kotlin:hover {
+    border-color: lightslategray;
+}
 .skills_kotlin img {
     border-radius: 50%;
     animation: float 5s infinite alternate; 
@@ -353,6 +368,9 @@ body {
     display: inline-block;
     overflow: hidden; 
     position: relative;
+}
+.skills_XML:hover {
+    border-color: lightslategray;
 }
 .skills_XML img {
     border-radius: 50%;
@@ -385,6 +403,9 @@ body {
     overflow: hidden; 
     position: relative;
 }
+.skills_python:hover {
+    border-color: lightslategray;
+}
 .skills_python img {
     border-radius: 50%;
     animation: float 5s infinite alternate; 
@@ -415,6 +436,9 @@ body {
     display: inline-block;
     overflow: hidden; 
     position: relative;
+}
+.skills_cplusplus:hover {
+    border-color: lightslategray;
 }
 .skills_cplusplus img {
     border-radius: 50%;
@@ -447,6 +471,9 @@ body {
     overflow: hidden; 
     position: relative;
 }
+.skills_arduino:hover {
+    border-color: lightslategray;
+}
 .skills_arduino img {
     border-radius: 50%;
     animation: float 5s infinite alternate; 
@@ -477,6 +504,9 @@ body {
     display: inline-block;
     overflow: hidden; 
     position: relative;
+}
+.skills_git:hover {
+    border-color: lightslategray;
 }
 .skills_git img {
     border-radius: 50%;
@@ -510,7 +540,7 @@ body {
     position: relative;
 }
 .skills_bash:hover {
-border-color: lightslategray;
+    border-color: lightslategray;
 }
 .skills_bash img {
     border-radius: 50%;
