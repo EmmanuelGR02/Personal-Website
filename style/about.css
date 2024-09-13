@@ -196,9 +196,11 @@ body {
     word-wrap: break-word;
     display: inline-block;
     overflow: hidden; 
+    align-items: center;
     position: relative;
     z-index: 1;
 }
+
 .skills_HTML:hover {
     border-color: lightslategray;
 }
@@ -288,19 +290,17 @@ body {
 /* *********************** Java *********************** */
 .skills_java {
     background-color: black;
-    text-align: center;
     color: black;
     padding: 10px;
     margin: 5px;
     border-radius: 5px;
     width: 200px;
-    height: 200px;
+    height: 250px;
     border: 2px solid white;
-    word-wrap: break-word;
     display: inline-block;
     overflow: hidden; 
-    position: relative;
 }
+
 .skills_java:hover {
     border-color: lightslategray;
 }
@@ -572,7 +572,7 @@ body {
     display: inline-block;
     overflow: hidden; 
     position: relative;
-    transition: border-color 0.3s ease-in-out; /* Add transition for smooth effect */
+    transition: border-color 0.3s ease-in-out; 
 }
 .skills_firebase:hover {
     border-color: lightslategray; 
@@ -592,5 +592,60 @@ body {
     transform: rotate(360deg); 
     box-shadow: 2px 4px 3px 1px lightslategray;
     transform: translate(-5px);
+}
+
+
+/*  *********************** Bullet point text *********************** */
+.bulletPoint_text {
+    color: white;
+    top: 2px;
+    margin-left: -10px;
+}
+
+/*  *********************** Bullet point colors *********************** */
+.green_bullet {
+    list-style-type: none;
+    position: relative;
+}
+.green_bullet::before {
+    content: "•";
+    color: lightgreen;
+    font-size: 30px;
+    position: absolute;
+    left: 0;
+    top: -5px;
+}
+
+.white_bullet {
+    list-style-type: none;
+    position: relative;
+}
+.white_bullet::before {
+    content: "•";
+    color: white;
+    font-size: 26px;
+    position: absolute;
+    left: 0;
+    top: -5px;
+}
+
+.red_bullet {
+    list-style-type: none;
+    position: relative;
+}
+.red_bullet::before {
+    content: "•";
+    color: red;
+    font-size: 30px;
+    position: absolute;
+    left: 0;
+    top: -5px;
+}
+
+/*  *********************** Bullet point colors *********************** */
+.skill_name {
+    color: white;
+    margin-bottom: 5px;
+    font-size: 20px;
 }
 
