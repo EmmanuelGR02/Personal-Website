@@ -48,8 +48,8 @@ body {
 
 .skills_tab {
     color: white;
-    width: 200px;
-    height: 30px;
+    width: 270px;
+    height: 40px;
     position: absolute;
     padding: 10px;
     left: 50%;
@@ -242,7 +242,7 @@ body {
 }
 .green_bullet::before {
     content: "•";
-    color: lightgreen;
+    color: rgb(3, 250, 3);
     font-size: 30px;
     position: absolute;
     left: 0;
@@ -269,6 +269,19 @@ body {
 .red_bullet::before {
     content: "•";
     color: red;
+    font-size: 30px;
+    position: absolute;
+    left: 0;
+    top: -5px;
+}
+
+.yellow_bullet {
+    list-style-type: none;
+    position: relative;
+}
+.yellow_bullet::before {
+    content: "•";
+    color: yellow;
     font-size: 30px;
     position: absolute;
     left: 0;
@@ -304,7 +317,7 @@ body {
 .toolTip::after {
     content: "";
     position: absolute;
-    top: 100%; /* Bottom of the tooltip */
+    top: 100%; 
     left: 50%;
     margin-left: -5px;
     border-width: 5px;
@@ -325,5 +338,16 @@ body {
 .red_bullet li:hover .toolTip {
     visibility: visible;
     opacity: 1;
+}
+
+.yellow_bullet li:hover .toolTip {
+    visibility: visible;
+    opacity: 1;
+}
+
+/*  *********************** Arrows *********************** */
+.upArrow {
+    width: 30px;
+    height: 30px;
 }
 
