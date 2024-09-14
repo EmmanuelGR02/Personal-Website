@@ -20,6 +20,26 @@ document.addEventListener("DOMContentLoaded", function() {
             skillsTab.style.background = "black";
         }
     });
+
+    var bulletPoint_text = document.getElementById("bulletPoint_text");
+    var toolTip = document.getElementById("toolTip");
+
+    // Toggle the visibility of the tooltip when bullet point text is clicked
+    bulletPoint_text.addEventListener("click", function(event) {
+        toolTip.classList.toggle("visible");
+        event.stopPropagation(); // Prevents click from bubbling up
+    });
+
+    // Hide tooltip when clicking anywhere else on the page
+    document.addEventListener("click", function() {
+        toolTip.classList.remove("visible");
+    });
+
+    // Prevent hiding the tooltip when clicking inside the tooltip itself
+    toolTip.addEventListener("click", function(event) {
+        event.stopPropagation();
+    });
+
 });
 
 
