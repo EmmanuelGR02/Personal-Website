@@ -232,6 +232,13 @@ body {
 .green_bullet {
     list-style-type: none;
     position: relative;
+    padding-left: 0;
+}
+.green_bullet li {
+    position: relative;
+    padding-left: 20px;
+    line-height: 1.5;
+    margin-bottom: 20px;
 }
 .green_bullet::before {
     content: "•";
@@ -273,5 +280,50 @@ body {
     color: white;
     margin-bottom: 5px;
     font-size: 20px;
+}
+
+/*  *********************** Tool-tip *********************** */
+.toolTip {
+    visibility: hidden; /* Hidden by default */
+    width: 150px;
+    background-color: black;
+    border: 2px solid white;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* Position it above the list item */
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.toolTip::after {
+    content: "";
+    position: absolute;
+    top: 100%; /* Bottom of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+
+.green_bullet li:hover .toolTip {
+    visibility: visible;
+    opacity: 1;
+}
+
+.white_bullet li:hover .toolTip {
+    visibility: visible;
+    opacity: 1;
+}
+
+.red_bullet li:hover .toolTip {
+    visibility: visible;
+    opacity: 1;
 }
 
