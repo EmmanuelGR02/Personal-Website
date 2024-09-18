@@ -415,15 +415,15 @@ body {
 }
 @media screen and (max-width: 480px) {
     .tab_wrapper {
-        margin-top: 9%;
+        margin-top: 5%;
         margin-left: 15%;
         height: auto;
     }
 }
 @media screen and (min-width: 481px) {
     .tab_wrapper {
-        margin-top: 5%;
-        margin-left: 1.5%;
+        margin-top: 9%;
+        margin-left: 8%;
     }
 }
 
