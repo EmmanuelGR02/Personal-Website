@@ -40,14 +40,12 @@ body {
 }
 .aboutme_msg {
     font-size: 100%;
-    color: white;
     font-weight: bold;
 }
 
-/* ****************************************************************** */
+/* ******************************Skills tab window************************************ */
 
 .skills_tab {
-    color: white;
     width: 270px;
     height: 40px;
     position: absolute;
@@ -95,7 +93,6 @@ body {
     box-shadow: 2px 2px 5px 2px lightgray;
 }
 
-
 .footer {
     position: absolute;
     bottom: 0;
@@ -139,7 +136,6 @@ body {
 .skills {
     background-color: black;
     text-align: center;
-    color: black;
     padding: 10px;
     margin: 5px auto;
     border-radius: 5px;
@@ -186,7 +182,6 @@ body {
 .skillContainer_child {
     background-color: black;
     text-align: center;
-    color: black;
     padding: 10px;
     margin: 5px;
     border-radius: 5px;
@@ -218,12 +213,8 @@ body {
     transform: translate(-5px);
 }
 
-
-
-
 /*  *********************** Bullet point text *********************** */
 .bulletPoint_text {
-    color: white;
     top: 2px;
     margin-left: -10px;
 }
@@ -290,7 +281,6 @@ body {
 
 /*  *********************** Bullet point colors *********************** */
 .skill_name {
-    color: white;
     margin-bottom: 5px;
     font-size: 20px;
 }
