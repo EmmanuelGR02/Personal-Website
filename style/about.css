@@ -351,6 +351,17 @@ body {
     width: 100%; 
     padding: 20px;
 }
+@media screen and (max-width: 480px) {
+    .containers_wrapper {
+        margin-top: 200px;
+        height: auto;
+    }
+}
+@media screen and (min-width: 481px) {
+    .containers_wrapper {
+        margin-top: 15%;
+    }
+}
 
 /*  *********************** Soft Skills Container*********************** */
 .softSkills_container {
@@ -371,6 +382,7 @@ body {
     z-index: 1;
 }
 
+
 /*  *********************** Coursework container *********************** */
 .coursework_container {
     background-color: black;
@@ -389,4 +401,5 @@ body {
     gap: 10px; 
     z-index: 1;
 }
+
 
