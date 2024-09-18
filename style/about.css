@@ -146,6 +146,7 @@ body {
     overflow: hidden; 
     align-items: center;
     position: relative;
+    cursor: pointer;
     z-index: 1;
 }
 .skillContainer_child:hover {
@@ -421,16 +422,12 @@ body {
 }
 @media screen and (min-width: 481px) {
     .tab_wrapper {
-        margin-top: 9%;
+        margin-top: 13%;
     }
 }
 
 /*  *********************** Soft Skills Tab *********************** */
 .softSkills_tab {
-    width: 270px;
-    height: 40px;
-    margin-left: auto;
-    margin-right: auto;
     padding: 10px;
     transform: translate(-50%, -50%);
     z-index: 1;
@@ -446,11 +443,16 @@ body {
 @media screen and (max-width: 480px) {
     .softSkills_tab {
         top: 370px;
+        width: 150px;
+        height: 40px;
     }
 }
 @media screen and (min-width: 481px) {
     .softSkills_tab {
         top: 38%;
+        margin-left: 14%;
+        width: 270px;
+        height: 40px;
     }
 }
 @keyframes fadeInText {
@@ -476,10 +478,6 @@ body {
 
 /*  *********************** Coursework Tab *********************** */
 .coursework_tab {
-    width: 270px;
-    height: 40px;
-    margin-left: auto;
-    margin-right: auto;
     padding: 10px;
     transform: translate(-50%, -50%);
     z-index: 1;
@@ -495,11 +493,16 @@ body {
 @media screen and (max-width: 480px) {
     .coursework_tab {
         top: 370px;
+        width: 130px;
+        height: 40px;
     }
 }
 @media screen and (min-width: 481px) {
     .coursework_tab {
         top: 38%;
+        margin-left: 15%;
+        width: 270px;
+        height: 40px;
     }
 }
 @keyframes fadeInText {
