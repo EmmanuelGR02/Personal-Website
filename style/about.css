@@ -416,13 +416,14 @@ body {
 @media screen and (max-width: 480px) {
     .tab_wrapper {
         margin-top: 200px;
-        margin-left: 150px;
+        margin-left: 90px;
         height: auto;
     }
 }
 @media screen and (min-width: 481px) {
     .tab_wrapper {
         margin-top: 13%;
+        margin-left: 1.5%;
     }
 }
 
@@ -443,6 +444,7 @@ body {
 @media screen and (max-width: 480px) {
     .softSkills_tab {
         top: 370px;
+        font-size: 25px;
         width: 150px;
         height: 55px;
     }
@@ -450,7 +452,6 @@ body {
 @media screen and (min-width: 481px) {
     .softSkills_tab {
         top: 38%;
-        margin-left: 14%;
         width: 270px;
         height: 40px;
     }
@@ -495,12 +496,12 @@ body {
         top: 370px;
         width: 130px;
         height: 55px;
+        font-size: 25px;
     }
 }
 @media screen and (min-width: 481px) {
     .coursework_tab {
         top: 38%;
-        margin-left: 15%;
         width: 270px;
         height: 40px;
     }
