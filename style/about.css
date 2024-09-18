@@ -415,8 +415,8 @@ body {
 }
 @media screen and (max-width: 480px) {
     .tab_wrapper {
-        margin-top: 30%;
-        margin-left: 20%;
+        margin-top: 35%;
+        margin-left: 18%;
         height: auto;
     }
 }
