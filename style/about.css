@@ -44,7 +44,57 @@ body {
 }
 
 /* ******************************Skills tab window************************************ */
-
+.skills_tab {
+    width: 210px;
+    height: 40px;
+    color: black;
+    position: absolute;
+    align-items: center;
+    margin-left: 10px;
+    display: flex;
+    padding: 10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    text-align: center;
+    border: 3px solid black;
+    border-radius: 30px;
+    background-color: white;
+    box-shadow: 0 0 8px 1.5px lightgray;
+    cursor: pointer;
+    transition: transform .5s ease;
+    animation: fadeInText 10s ease forwards, floating 2s infinite alternate;
+}
+@media screen and (max-width: 480px) {
+    .skills_tab {
+        top: 370px;
+    }
+}
+@media screen and (min-width: 481px) {
+    .skills_tab {
+        top: 38%;
+    }
+}
+@keyframes fadeInText {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes floating {
+    0% {
+        transform: translate(-50%, -50%) translateY(0);
+    }
+    100% {
+        transform: translate(-50%, -50%) translateY(-10px);
+    }
+}
+.skills_tab:hover {
+    transform: translate(-50%, -50%) rotate(360deg); 
+    box-shadow: 2px 2px 5px 2px lightgray;
+}
 
 .footer {
     position: absolute;
@@ -68,7 +118,6 @@ body {
     border: 3px solid black;
     box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.5); 
     transition: box-shadow 0.3s, transform 0.3s; 
-    display: flex; 
     flex-wrap: wrap; 
     align-items: center;
     animation: fadeInText 5s ease forwards;
@@ -294,6 +343,14 @@ body {
 .upArrow {
     width: 30px;
     height: 30px;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+.downArrow {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    vertical-align: middle;
 }
 
 /*  *********************** Containers Wrapper *********************** */
@@ -354,55 +411,6 @@ body {
     animation: fadeInText 5s ease forwards;
     gap: 10px; 
     z-index: 1;
-}
-
-
-.skills_tab {
-    width: 270px;
-    height: 40px;
-    position: absolute;
-    padding: 10px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-    text-align: center;
-    border: 2px solid white;
-    border-radius: 30px;
-    background-color: black;
-    box-shadow: 0 0 8px 1.5px lightgray;
-    cursor: pointer;
-    transition: transform .5s ease;
-    animation: fadeInText 10s ease forwards, floating 2s infinite alternate;
-}
-@media screen and (max-width: 480px) {
-    .skills_tab {
-        top: 370px;
-    }
-}
-@media screen and (min-width: 481px) {
-    .skills_tab {
-        top: 38%;
-    }
-}
-@keyframes fadeInText {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-@keyframes floating {
-    0% {
-        transform: translate(-50%, -50%) translateY(0);
-    }
-    100% {
-        transform: translate(-50%, -50%) translateY(-10px);
-    }
-}
-.skills_tab:hover {
-    transform: translate(-50%, -50%) rotate(360deg); 
-    box-shadow: 2px 2px 5px 2px lightgray;
 }
 
 /*  *********************** Tab Wrapper *********************** */
