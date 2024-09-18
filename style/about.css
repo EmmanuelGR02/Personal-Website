@@ -410,13 +410,13 @@ body {
     display: flex;
     justify-content: space-around; 
     flex-wrap: wrap; 
-    margin: 0 auto;
     width: 100%; 
     padding: 10px;
 }
 @media screen and (max-width: 480px) {
     .tab_wrapper {
         margin-top: 170px;
+        margin-right: 100px;
         height: auto;
     }
 }
@@ -444,7 +444,7 @@ body {
     .softSkills_tab {
         top: 370px;
         width: 150px;
-        height: 40px;
+        height: 55px;
     }
 }
 @media screen and (min-width: 481px) {
@@ -494,7 +494,7 @@ body {
     .coursework_tab {
         top: 370px;
         width: 130px;
-        height: 40px;
+        height: 55px;
     }
 }
 @media screen and (min-width: 481px) {
