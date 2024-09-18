@@ -307,7 +307,7 @@ body {
 }
 @media screen and (max-width: 480px) {
     .containers_wrapper {
-        margin-top: 0px;
+        margin-top: -100px;
         height: auto;
     }
 }
@@ -415,8 +415,8 @@ body {
 }
 @media screen and (max-width: 480px) {
     .tab_wrapper {
-        margin-top: 170px;
-        margin-right: 100px;
+        margin-top: 200px;
+        margin-right: 200px;
         height: auto;
     }
 }
