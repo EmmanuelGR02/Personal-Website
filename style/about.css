@@ -103,35 +103,6 @@ body {
     z-index: 999; 
 }
 
-.skills_container {
-    background-color: black;
-    width: 90%;
-    margin-bottom: 5%;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px;
-    border-radius: 15px;
-    border: 3px solid black;
-    box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.5); 
-    transition: box-shadow 0.3s, transform 0.3s; 
-    display: flex; 
-    flex-wrap: wrap; 
-    align-items: center;
-    animation: fadeInText 5s ease forwards;
-    gap: 10px; 
-    z-index: 1;
-}
-@media screen and (max-width: 480px) {
-    .skills_container {
-        margin-top: 170px;
-        height: auto;
-    }
-}
-@media screen and (min-width: 481px) {
-    .skills_container {
-        margin-top: 9%;
-    }
-}
 
 .skills {
     background-color: black;
@@ -146,7 +117,6 @@ body {
     overflow: hidden; 
     position: relative; 
 }
-
 
 .skills img {
     border-radius: 50%;
@@ -330,6 +300,7 @@ body {
     opacity: 1;
 }
 
+
 .yellow_bullet li:hover .toolTip {
     visibility: visible;
     opacity: 1;
@@ -339,5 +310,83 @@ body {
 .upArrow {
     width: 30px;
     height: 30px;
+}
+
+.skills_container {
+    background-color: black;
+    width: 90%;
+    margin-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    border-radius: 15px;
+    border: 3px solid black;
+    box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.5); 
+    transition: box-shadow 0.3s, transform 0.3s; 
+    display: flex; 
+    flex-wrap: wrap; 
+    align-items: center;
+    animation: fadeInText 5s ease forwards;
+    gap: 10px; 
+    z-index: 1;
+}
+@media screen and (max-width: 480px) {
+    .skills_container {
+        margin-top: 170px;
+        height: auto;
+    }
+}
+@media screen and (min-width: 481px) {
+    .skills_container {
+        margin-top: 9%;
+    }
+}
+
+/*  *********************** Containers Wrapper *********************** */
+.containers_wrapper {
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap; 
+    margin: 0 auto;
+    width: 100%; 
+    padding: 20px;
+}
+
+/*  *********************** Soft Skills Container*********************** */
+.softSkills_container {
+    background-color: black;
+    width: 30%;
+    height: 200px;
+    padding: 20px;
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.5); 
+    transition: box-shadow 0.3s, transform 0.3s;
+    display: flex; 
+    flex-wrap: wrap; 
+    align-items: center;
+    animation: fadeInText 5s ease forwards;
+    gap: 10px; 
+    z-index: 1;
+}
+
+/*  *********************** Coursework container *********************** */
+.coursework_container {
+    background-color: black;
+    width: 30%;
+    height: 200px;
+    padding: 20px;
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.5); 
+    transition: box-shadow 0.3s, transform 0.3s;
+    display: flex; 
+    flex-wrap: wrap; 
+    align-items: center;
+    animation: fadeInText 5s ease forwards;
+    gap: 10px; 
+    z-index: 1;
 }
 
