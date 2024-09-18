@@ -415,8 +415,8 @@ body {
 }
 @media screen and (max-width: 480px) {
     .tab_wrapper {
-        margin-top: 15%px;
-        margin-left: 10%;
+        margin-top: 9%;
+        margin-left: 12%;
         height: auto;
     }
 }
@@ -444,7 +444,7 @@ body {
 @media screen and (max-width: 480px) {
     .softSkills_tab {
         top: 370px;
-        font-size: 22px;
+        font-size: 20px;
         width: 150px;
         height: 55px;
     }
@@ -496,7 +496,7 @@ body {
         top: 370px;
         width: 130px;
         height: 55px;
-        font-size: 22px;
+        font-size: 20px;
     }
 }
 @media screen and (min-width: 481px) {
