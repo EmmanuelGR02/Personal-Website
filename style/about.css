@@ -45,53 +45,6 @@ body {
 
 /* ******************************Skills tab window************************************ */
 
-.skills_tab {
-    width: 270px;
-    height: 40px;
-    position: absolute;
-    padding: 10px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 999;
-    text-align: center;
-    border: 2px solid white;
-    border-radius: 30px;
-    background-color: black;
-    box-shadow: 0 0 8px 1.5px lightgray;
-    cursor: pointer;
-    transition: transform .5s ease;
-    animation: fadeInText 10s ease forwards, floating 2s infinite alternate;
-}
-@media screen and (max-width: 480px) {
-    .skills_tab {
-        top: 370px;
-    }
-}
-@media screen and (min-width: 481px) {
-    .skills_tab {
-        top: 38%;
-    }
-}
-@keyframes fadeInText {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-@keyframes floating {
-    0% {
-        transform: translate(-50%, -50%) translateY(0);
-    }
-    100% {
-        transform: translate(-50%, -50%) translateY(-10px);
-    }
-}
-.skills_tab:hover {
-    transform: translate(-50%, -50%) rotate(360deg); 
-    box-shadow: 2px 2px 5px 2px lightgray;
-}
 
 .footer {
     position: absolute;
@@ -103,6 +56,36 @@ body {
     z-index: 999; 
 }
 
+/*  *********************** Tech skills main container *********************** */
+.skills_container {
+    background-color: black;
+    width: 90%;
+    margin-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    border-radius: 15px;
+    border: 3px solid black;
+    box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.5); 
+    transition: box-shadow 0.3s, transform 0.3s; 
+    display: flex; 
+    flex-wrap: wrap; 
+    align-items: center;
+    animation: fadeInText 5s ease forwards;
+    gap: 10px; 
+    z-index: 1;
+}
+@media screen and (max-width: 480px) {
+    .skills_container {
+        margin-top: 170px;
+        height: auto;
+    }
+}
+@media screen and (min-width: 481px) {
+    .skills_container {
+        margin-top: 9%;
+    }
+}
 
 .skills {
     background-color: black;
@@ -312,36 +295,6 @@ body {
     height: 30px;
 }
 
-.skills_container {
-    background-color: black;
-    width: 90%;
-    margin-bottom: 5%;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px;
-    border-radius: 15px;
-    border: 3px solid black;
-    box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.5); 
-    transition: box-shadow 0.3s, transform 0.3s; 
-    display: flex; 
-    flex-wrap: wrap; 
-    align-items: center;
-    animation: fadeInText 5s ease forwards;
-    gap: 10px; 
-    z-index: 1;
-}
-@media screen and (max-width: 480px) {
-    .skills_container {
-        margin-top: 170px;
-        height: auto;
-    }
-}
-@media screen and (min-width: 481px) {
-    .skills_container {
-        margin-top: 9%;
-    }
-}
-
 /*  *********************** Containers Wrapper *********************** */
 .containers_wrapper {
     display: flex;
@@ -349,17 +302,17 @@ body {
     flex-wrap: wrap; 
     margin: 0 auto;
     width: 100%; 
-    padding: 20px;
+    padding: 10px;
 }
 @media screen and (max-width: 480px) {
     .containers_wrapper {
-        margin-top: 200px;
+        margin-top: 0px;
         height: auto;
     }
 }
 @media screen and (min-width: 481px) {
     .containers_wrapper {
-        margin-top: 15%;
+        margin-top: 0%;
     }
 }
 
@@ -402,4 +355,171 @@ body {
     z-index: 1;
 }
 
+
+.skills_tab {
+    width: 270px;
+    height: 40px;
+    position: absolute;
+    padding: 10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 30px;
+    background-color: black;
+    box-shadow: 0 0 8px 1.5px lightgray;
+    cursor: pointer;
+    transition: transform .5s ease;
+    animation: fadeInText 10s ease forwards, floating 2s infinite alternate;
+}
+@media screen and (max-width: 480px) {
+    .skills_tab {
+        top: 370px;
+    }
+}
+@media screen and (min-width: 481px) {
+    .skills_tab {
+        top: 38%;
+    }
+}
+@keyframes fadeInText {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes floating {
+    0% {
+        transform: translate(-50%, -50%) translateY(0);
+    }
+    100% {
+        transform: translate(-50%, -50%) translateY(-10px);
+    }
+}
+.skills_tab:hover {
+    transform: translate(-50%, -50%) rotate(360deg); 
+    box-shadow: 2px 2px 5px 2px lightgray;
+}
+
+/*  *********************** Tab Wrapper *********************** */
+.tab_wrapper {
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap; 
+    margin: 0 auto;
+    width: 100%; 
+    padding: 10px;
+}
+@media screen and (max-width: 480px) {
+    .tab_wrapper {
+        margin-top: 170px;
+        height: auto;
+    }
+}
+@media screen and (min-width: 481px) {
+    .tab_wrapper {
+        margin-top: 9%;
+    }
+}
+
+/*  *********************** Soft Skills Tab *********************** */
+.softSkills_tab {
+    width: 270px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 30px;
+    background-color: black;
+    box-shadow: 0 0 8px 1.5px lightgray;
+    cursor: pointer;
+    transition: transform .5s ease;
+    animation: fadeInText 10s ease forwards, floating 2s infinite alternate;
+}
+@media screen and (max-width: 480px) {
+    .softSkills_tab {
+        top: 370px;
+    }
+}
+@media screen and (min-width: 481px) {
+    .softSkills_tab {
+        top: 38%;
+    }
+}
+@keyframes fadeInText {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes floating {
+    0% {
+        transform: translate(-50%, -50%) translateY(0);
+    }
+    100% {
+        transform: translate(-50%, -50%) translateY(-10px);
+    }
+}
+.softSkills_tab:hover {
+    transform: translate(-50%, -50%) rotate(360deg); 
+    box-shadow: 2px 2px 5px 2px lightgray;
+}
+
+/*  *********************** Coursework Tab *********************** */
+.coursework_tab {
+    width: 270px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 30px;
+    background-color: black;
+    box-shadow: 0 0 8px 1.5px lightgray;
+    cursor: pointer;
+    transition: transform .5s ease;
+    animation: fadeInText 10s ease forwards, floating 2s infinite alternate;
+}
+@media screen and (max-width: 480px) {
+    .coursework_tab {
+        top: 370px;
+    }
+}
+@media screen and (min-width: 481px) {
+    .coursework_tab {
+        top: 38%;
+    }
+}
+@keyframes fadeInText {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes floating {
+    0% {
+        transform: translate(-50%, -50%) translateY(0);
+    }
+    100% {
+        transform: translate(-50%, -50%) translateY(-10px);
+    }
+}
+.coursework_tab:hover {
+    transform: translate(-50%, -50%) rotate(360deg); 
+    box-shadow: 2px 2px 5px 2px lightgray;
+}
 
