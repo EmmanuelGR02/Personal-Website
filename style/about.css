@@ -358,9 +358,8 @@ body {
 /*  *********************** Containers Wrapper *********************** */
 .containers_wrapper {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     padding: 10px;
     flex-direction: row; 
@@ -368,14 +367,14 @@ body {
 @media screen and (max-width: 480px) {
     .containers_wrapper {
         flex-direction: column; 
-        margin-top: -60px;
+        margin-top: 20%;
         height: auto;
     }
 }
 @media screen and (min-width: 481px) {
     .containers_wrapper {
         flex-direction: row; 
-        margin-top: 0;
+        margin-top: 15%;
     }
 }
 
@@ -385,21 +384,17 @@ body {
     background-color: black;
     width: 30%;
     height: 200px;
-    padding: 20px;
-    border-radius: 15px;
-    margin-left: auto;
-    margin-right: auto;
     box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.5); 
     transition: box-shadow 0.3s, transform 0.3s;
     display: flex; 
     flex-wrap: wrap; 
+    border-radius: 30px;
     justify-content: center;
     align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
     animation: fadeInText 5s ease forwards;
-    gap: 10px; 
-    z-index: 1;
 }
-
 @media screen and (max-width: 480px) {
     .softSkills_container {
         flex-direction: column; 
@@ -407,31 +402,10 @@ body {
         height: auto; 
     }
 }
-
 @media screen and (min-width: 481px) {
     .softSkills_container {
         flex-direction: row; 
     }
-}
-
-
-/*  *********************** Coursework container *********************** */
-.coursework_container {
-    background-color: black;
-    width: 30%;
-    height: 200px;
-    padding: 20px;
-    border-radius: 15px;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.5); 
-    transition: box-shadow 0.3s, transform 0.3s;
-    display: flex; 
-    flex-wrap: wrap; 
-    align-items: center;
-    animation: fadeInText 5s ease forwards;
-    gap: 10px; 
-    z-index: 1;
 }
 
 /*  *********************** Tab Wrapper *********************** */
@@ -458,17 +432,16 @@ body {
 
 /*  *********************** Soft Skills Tab *********************** */
 .softSkills_tab {
-    padding: 10px;
-    transform: translate(-50%, -50%);
-    z-index: 1;
+    padding: 2px;
     text-align: center;
-    align-items: center;
     justify-content: center;
-    border: 2px solid white;
+    border: 3px solid black;
     border-radius: 30px;
     background-color: black;
     box-shadow: 0 0 8px 1.5px lightgray;
     cursor: pointer;
+    margin-left: 50%;
+    margin-top: 6%;
     transition: transform .5s ease;
     animation: fadeInText 10s ease forwards, floating 2s infinite alternate;
 }
@@ -508,15 +481,16 @@ body {
 
 /*  *********************** Coursework Tab *********************** */
 .coursework_tab {
-    padding: 10px;
-    transform: translate(-50%, -50%);
-    z-index: 1;
+    padding: 2px;
     text-align: center;
-    border: 2px solid white;
+    justify-content: center;
+    border: 3px solid black;
     border-radius: 30px;
     background-color: black;
     box-shadow: 0 0 8px 1.5px lightgray;
     cursor: pointer;
+    margin-left: 50%;
+    margin-top: -11%;
     transition: transform .5s ease;
     animation: fadeInText 10s ease forwards, floating 2s infinite alternate;
 }
