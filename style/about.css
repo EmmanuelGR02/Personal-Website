@@ -367,7 +367,7 @@ body {
 @media screen and (max-width: 480px) {
     .containers_wrapper {
         flex-direction: column; 
-        margin-top: 20%;
+        margin-top: 60%;
         height: auto;
     }
 }
@@ -380,7 +380,7 @@ body {
 
 
 /*  *********************** Soft Skills Container*********************** */
-.softSkills_container {
+.softSkillsCourses_container {
     background-color: black;
     width: 30%;
     height: 200px;
