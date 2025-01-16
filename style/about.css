@@ -49,7 +49,7 @@ body {
 .skills_tab {
     width: 210px;
     height: 40px;
-    color: black;
+    color: white;
     position: absolute;
     align-items: center;
     margin-left: 10px;
@@ -61,7 +61,7 @@ body {
     text-align: center;
     border: 3px solid black;
     border-radius: 30px;
-    background-color: white;
+    background-color: black;
     box-shadow: 0 0 8px 1.5px lightgray;
     cursor: pointer;
     transition: transform .5s ease;
@@ -394,9 +394,24 @@ body {
     display: flex; 
     flex-wrap: wrap; 
     justify-content: center;
+    align-items: center;
     animation: fadeInText 5s ease forwards;
     gap: 10px; 
     z-index: 1;
+}
+
+@media screen and (max-width: 480px) {
+    .softSkills_container {
+        flex-direction: column; 
+        width: 90%; 
+        height: auto; 
+    }
+}
+
+@media screen and (min-width: 481px) {
+    .softSkills_container {
+        flex-direction: row; 
+    }
 }
 
 
@@ -447,6 +462,8 @@ body {
     transform: translate(-50%, -50%);
     z-index: 1;
     text-align: center;
+    align-items: center;
+    justify-content: center;
     border: 2px solid white;
     border-radius: 30px;
     background-color: black;
