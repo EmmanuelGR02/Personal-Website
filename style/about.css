@@ -430,7 +430,7 @@ body {
         flex-direction: column; 
         width: 90%; 
         height: auto; 
-        margin-top: 5%;
+        margin-top: 10%;
     }
 }
 @media screen and (min-width: 481px) {
