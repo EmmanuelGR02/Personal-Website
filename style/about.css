@@ -405,6 +405,7 @@ body {
         display: grid;
         justify-items: center;
         padding: 5px;
+        padding-bottom: 5px;
     }
 }
 @media screen and (min-width: 481px) {
@@ -437,6 +438,7 @@ body {
         display: grid;
         justify-items: center;
         padding: 5px;
+        padding-bottom: 5px;
     }
 }
 @media screen and (min-width: 481px) {
