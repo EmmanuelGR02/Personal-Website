@@ -402,6 +402,8 @@ body {
         flex-direction: column; 
         width: 90%; 
         height: auto; 
+        display: grid;
+        justify-items: center;
     }
 }
 @media screen and (min-width: 481px) {
