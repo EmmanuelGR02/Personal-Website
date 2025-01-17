@@ -404,6 +404,7 @@ body {
         height: auto; 
         display: grid;
         justify-items: center;
+        padding: 5px;
     }
 }
 @media screen and (min-width: 481px) {
@@ -435,6 +436,7 @@ body {
         margin-top: 10%;
         display: grid;
         justify-items: center;
+        padding: 5px;
     }
 }
 @media screen and (min-width: 481px) {
@@ -494,7 +496,7 @@ body {
         height: auto;
         margin-top: 8%;
         text-align: center;
-        margin-right: -50%;
+        margin-right: -45%;
     }
 }
 @media screen and (min-width: 481px) {
