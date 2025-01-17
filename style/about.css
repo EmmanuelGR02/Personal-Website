@@ -448,7 +448,7 @@ body {
 }
 
 .softSkillsContent_wrapper {
-    margin-top: -12%;
+    margin-top: -8%;
 }
 
 
@@ -494,7 +494,8 @@ body {
         height: auto;
         margin-top: 8%;
         text-align: center;
-        margin-right: 0%;
+        margin-right: 50%;
+        margin-left: 50%;
     }
 }
 @media screen and (min-width: 481px) {
@@ -546,8 +547,7 @@ body {
         text-align: center;
         font-size: 20px;
         margin-top: 8%;
-        margin-right: 0%;
-        margin-left: 0%;
+        margin-right: -25%;
     }
 }
 @media screen and (min-width: 481px) {
