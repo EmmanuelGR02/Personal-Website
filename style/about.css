@@ -370,7 +370,7 @@ body {
         margin-top: 60%;
         height: 100%;
         width: 100%;
-        padding-bottom: 10%;
+        padding-top: 10%;
     }
 }
 @media screen and (min-width: 481px) {
@@ -410,6 +410,9 @@ body {
     }
 }
 
+.softSkillsContent_wrapper {
+    margin-top: -12%;
+}
 /*  *********************** Tab Wrapper *********************** */
 .tab_wrapper {
     display: flex;
@@ -452,7 +455,7 @@ body {
         font-size: 20px;
         width: 130px;
         height: 55px;
-        margin-top: 10%;
+        margin-top: 12%;
     }
 }
 @media screen and (min-width: 481px) {
