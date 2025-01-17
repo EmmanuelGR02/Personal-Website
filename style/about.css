@@ -488,8 +488,8 @@ body {
 @media screen and (max-width: 480px) {
     .softSkills_tab {
         font-size: 20px;
-        width: 130px;
-        height: 55px;
+        width: 20%;
+        height: auto;
         margin-top: 12%;
     }
 }
@@ -537,8 +537,8 @@ body {
 }
 @media screen and (max-width: 480px) {
     .coursework_tab {
-        width: 130px;
-        height: 55px;
+        width: 20%;
+        height: auto;
         font-size: 20px;
         margin-top: 12%;
     }
