@@ -390,7 +390,7 @@ body {
 .softSkills_container {
     background-color: black;
     width: 100%;
-    height: 220px;
+    height: auto;
     box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.5); 
     transition: box-shadow 0.3s, transform 0.3s;
     display: flex; 
@@ -416,6 +416,7 @@ body {
         align-items: center;
         margin-left: 10%;
         margin-right: 10%;
+        padding-bottom: .5%;
     }
 }
 
@@ -516,10 +517,11 @@ body {
 }
 @media screen and (min-width: 481px) {
     .softSkills_tab {
-        width: 270px;
+        width: 200px;
         height: auto;
-        margin-left: 50%;
-        margin-top: 6%;
+        padding: 5px;
+        margin-left: 40%;
+        margin-top: 7%;
     }
 }
 @keyframes fadeInText {
@@ -567,7 +569,8 @@ body {
 }
 @media screen and (min-width: 481px) {
     .coursework_tab {
-        width: 270px;
+        width: auto;
+        padding: 5px;
         height: auto;
         margin-left: 50%;
         margin-top: 0%;
