@@ -395,10 +395,6 @@ body {
     display: flex; 
     flex-wrap: wrap; 
     border-radius: 30px;
-    justify-content: center;
-    align-items: center;
-    margin-left: 10%;
-    margin-right: 10%;
     animation: fadeInText 5s ease forwards;
 }
 @media screen and (max-width: 480px) {
@@ -411,6 +407,10 @@ body {
 @media screen and (min-width: 481px) {
     .softSkills_container {
         flex-direction: row; 
+        justify-content: center;
+        align-items: center;
+        margin-left: 10%;
+        margin-right: 10%;
     }
 }
 
@@ -423,10 +423,6 @@ body {
     display: flex; 
     flex-wrap: wrap; 
     border-radius: 30px;
-    justify-content: center;
-    align-items: center;
-    margin-left: 10%;
-    margin-right: 10%;
     animation: fadeInText 5s ease forwards;
 }
 @media screen and (max-width: 480px) {
@@ -440,6 +436,10 @@ body {
 @media screen and (min-width: 481px) {
     .coursework_container {
         flex-direction: row; 
+        justify-content: center;
+        align-items: center;
+        margin-left: 10%;
+        margin-right: 10%;
     }
 }
 
