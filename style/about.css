@@ -495,7 +495,7 @@ body {
         height: auto;
         margin-top: 12%;
         text-align: center;
-        margin-right: -15%;
+        margin-right: -20%;
     }
 }
 @media screen and (min-width: 481px) {
@@ -547,7 +547,7 @@ body {
         text-align: center;
         font-size: 20px;
         margin-top: 12%;
-        margin-right: -15%;
+        margin-right: -20%;
     }
 }
 @media screen and (min-width: 481px) {
