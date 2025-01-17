@@ -372,7 +372,7 @@ body {
 @media screen and (max-width: 480px) {
     .containers_wrapper {
         flex-direction: column; 
-        margin-top: 60%;
+        margin-top: 55%;
         height: auto;
         width: 96%;
     }
