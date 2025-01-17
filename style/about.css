@@ -433,7 +433,7 @@ body {
     .coursework_container {
         flex-direction: column; 
         width: 90%; 
-        margin-top: 13%;
+        margin-top: 17%;
         display: grid;
         justify-items: center;
         padding: 5px;
@@ -460,6 +460,12 @@ body {
 .courseworkContent_wrapper {
     margin-top: -5%;
     line-height: 22px;
+}
+@media screen and (max-width: 480px) {
+    .courseworkContent_wrapper {
+        line-height: 26px;
+        padding: 5px;
+    }
 }
 
 /*  *********************** Tab Wrapper *********************** */
