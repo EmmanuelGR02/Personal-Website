@@ -401,6 +401,7 @@ body {
     .softSkills_container {
         flex-direction: column; 
         width: 90%; 
+        margin-right: 10%;
         height: auto; 
         display: grid;
         justify-items: center;
