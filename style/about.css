@@ -472,7 +472,7 @@ body {
 
 /*  *********************** Soft Skills Tab *********************** */
 .softSkills_tab {
-    padding: 2px;
+    padding: 0px;
     text-align: center;
     justify-content: center;
     border: 3px solid black;
@@ -480,8 +480,6 @@ body {
     background-color: black;
     box-shadow: 0 0 8px 1.5px lightgray;
     cursor: pointer;
-    margin-left: 50%;
-    margin-top: 6%;
     transition: transform .5s ease;
     animation: fadeInText 10s ease forwards, floating 2s infinite alternate;
 }
@@ -491,12 +489,15 @@ body {
         width: 20%;
         height: auto;
         margin-top: 12%;
+        text-align: center;
     }
 }
 @media screen and (min-width: 481px) {
     .softSkills_tab {
         width: 270px;
-        height: 40px;
+        height: auto;
+        margin-left: 50%;
+        margin-top: 6%;
     }
 }
 @keyframes fadeInText {
@@ -522,7 +523,7 @@ body {
 
 /*  *********************** Coursework Tab *********************** */
 .coursework_tab {
-    padding: 2px;
+    padding: 0px;
     text-align: center;
     justify-content: center;
     border: 3px solid black;
@@ -530,8 +531,6 @@ body {
     background-color: black;
     box-shadow: 0 0 8px 1.5px lightgray;
     cursor: pointer;
-    margin-left: 50%;
-    margin-top: -11%;
     transition: transform .5s ease;
     animation: fadeInText 10s ease forwards, floating 2s infinite alternate;
 }
@@ -547,7 +546,9 @@ body {
 @media screen and (min-width: 481px) {
     .coursework_tab {
         width: 270px;
-        height: 40px;
+        height: auto;
+        margin-left: 50%;
+        margin-top: -23.4%;
     }
 }
 @keyframes fadeInText {
