@@ -115,10 +115,8 @@ body {
 .skills_container {
     background-color: black;
     width: 90%;
-    margin-bottom: 5%;
     margin-left: auto;
     margin-right: auto;
-    padding: 20px;
     border-radius: 15px;
     border: 3px solid black;
     box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.5); 
@@ -134,11 +132,14 @@ body {
         margin-top: 170px;
         height: auto;
         width: 75%;
+        padding: 20px;
+        margin-bottom: 5%;
     }
 }
 @media screen and (min-width: 481px) {
     .skills_container {
         margin-top: 9%;
+        margin-bottom: -9%;
     }
 }
 
@@ -380,7 +381,7 @@ body {
 @media screen and (min-width: 481px) {
     .containers_wrapper {
         flex-direction: row; 
-        margin-top: 15%;
+        margin-top: 3%;
     }
 }
 
