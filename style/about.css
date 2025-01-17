@@ -433,7 +433,7 @@ body {
     .coursework_container {
         flex-direction: column; 
         width: 90%; 
-        margin-top: 10%;
+        margin-top: 13%;
         display: grid;
         justify-items: center;
         padding: 5px;
@@ -454,10 +454,12 @@ body {
 }
 
 .softSkillsContent_wrapper {
-    margin-top: -8%;
+    margin-top: -6%;
+    line-height: 22px;
 }
 .courseworkContent_wrapper {
     margin-top: -5%;
+    line-height: 22px;
 }
 
 /*  *********************** Tab Wrapper *********************** */
