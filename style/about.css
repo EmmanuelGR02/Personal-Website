@@ -382,7 +382,7 @@ body {
 
 
 /*  *********************** Soft Skills Container*********************** */
-.softSkillsCourses_container {
+.softSkills_container {
     background-color: black;
     width: 100%;
     height: 220px;
@@ -402,6 +402,35 @@ body {
         flex-direction: column; 
         width: 90%; 
         height: auto; 
+    }
+}
+@media screen and (min-width: 481px) {
+    .softSkills_container {
+        flex-direction: row; 
+    }
+}
+
+.coursework_container {
+    background-color: black;
+    width: 100%;
+    height: 220px;
+    box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.5); 
+    transition: box-shadow 0.3s, transform 0.3s;
+    display: flex; 
+    flex-wrap: wrap; 
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    animation: fadeInText 5s ease forwards;
+}
+@media screen and (max-width: 480px) {
+    .softSkills_container {
+        flex-direction: column; 
+        width: 90%; 
+        height: auto; 
+        margin-top: 5%;
     }
 }
 @media screen and (min-width: 481px) {
