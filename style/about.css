@@ -426,7 +426,7 @@ body {
     animation: fadeInText 5s ease forwards;
 }
 @media screen and (max-width: 480px) {
-    .softSkills_container {
+    .coursework_container {
         flex-direction: column; 
         width: 90%; 
         height: auto; 
@@ -434,7 +434,7 @@ body {
     }
 }
 @media screen and (min-width: 481px) {
-    .softSkills_container {
+    .coursework_container {
         flex-direction: row; 
     }
 }
@@ -442,6 +442,8 @@ body {
 .softSkillsContent_wrapper {
     margin-top: -12%;
 }
+
+
 /*  *********************** Tab Wrapper *********************** */
 .tab_wrapper {
     display: flex;
