@@ -604,3 +604,8 @@ body {
     margin-top: -5%;
     padding-bottom: 20px;
 }
+@media screen and (max-width: 480px) {
+    .courseworkTitle {
+        margin-top: 2%;
+    }
+}
