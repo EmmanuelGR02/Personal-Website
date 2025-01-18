@@ -7,18 +7,18 @@ document.addEventListener("DOMContentLoaded", function() {
 
     
     // arrow up/down image display logic and skills container
-    skillsContainer.style.display = "none";
-    upArrow.style.display = "none";
-    downArrow.style.display = "block";
+    skillsContainer.style.display = "block";
+    upArrow.style.display = "block";
+    downArrow.style.display = "none";
     skillsTab.addEventListener("click", function() {
-        if (skillsContainer.style.display === "none") {
-            skillsContainer.style.display = "block";
-            downArrow.style.display = "none";
-            upArrow.style.display = "block";
-        } else {
+        if (skillsContainer.style.display === "block") {
             skillsContainer.style.display = "none";
-            upArrow.style.display = "none";
             downArrow.style.display = "block";
+            upArrow.style.display = "none";
+        } else {
+            skillsContainer.style.display = "block";
+            upArrow.style.display = "block";
+            downArrow.style.display = "none";
         }
     });
 
