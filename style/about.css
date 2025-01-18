@@ -608,5 +608,6 @@ body {
 @media screen and (max-width: 480px) {
     .courseworkTitle {
         margin-top: 3%;
+        text-align: center;
     }
 }
