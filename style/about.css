@@ -392,8 +392,7 @@ body {
     width: 100%;
     height: auto;
     box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.5); 
-    transition: box-shadow 0.3s, transform 0.3s;
-    display: flex; 
+    transition: box-shadow 0.3s, transform 0.3s; 
     flex-wrap: wrap; 
     border-radius: 30px;
     animation: fadeInText 5s ease forwards;
@@ -417,6 +416,7 @@ body {
         margin-left: 10%;
         margin-right: 10%;
         padding-bottom: .5%;
+        display: grid;
     }
 }
 
