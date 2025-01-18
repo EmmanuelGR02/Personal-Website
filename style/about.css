@@ -596,3 +596,11 @@ body {
     transform: translate(-50%, -50%) rotate(360deg); 
     box-shadow: 2px 2px 5px 2px lightgray;
 }
+.softSkillsTitle {
+    margin-top: 2%;
+    padding-bottom: 20px;
+}
+.courseworkTitle {
+    margin-top: -5%;
+    padding-bottom: 20px;
+}
