@@ -3,20 +3,32 @@ const Dotenv = require('dotenv-webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    entry: './javascript/homepage.js', // Entry point of your app
+    entry: './javascript/homepage.js', // Entry point
     output: {
-        filename: 'bundle.js', // Output JavaScript bundle
-        path: path.resolve(__dirname, 'dist'), // Output folder
-        clean: true, // Clean 'dist' folder before each build
+        filename: 'bundle.js',
+        path: path.resolve(__dirname, 'dist'),
+        clean: true, // Clean the dist folder before every build
+    },
+    module: {
+        rules: [
+            {
+                test: /\.css$/, // Process CSS files
+                use: ['style-loader', 'css-loader'],
+            },
+            {
+                test: /\.(png|jpe?g|gif|svg)$/, // Process image files
+                type: 'asset/resource',
+            },
+        ],
     },
     resolve: {
-        extensions: ['.js', '.json'], // Extensions Webpack will resolve
+        extensions: ['.js', '.json'], // Resolve these extensions
     },
     plugins: [
-        new Dotenv(), // Load environment variables from .env
+        new Dotenv(),
         new HtmlWebpackPlugin({
-            template: './index.html', // Source HTML file
-            filename: 'index.html', // Output file name in 'dist' folder
+            template: './src/index.html', // Source HTML file
+            filename: 'index.html',
         }),
     ],
     mode: 'development', // Development mode
