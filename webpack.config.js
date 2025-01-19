@@ -1,35 +1,51 @@
 const path = require('path');
-const Dotenv = require('dotenv-webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
-    entry: './javascript/homepage.js', // Entry point
+    entry: './javascript/homepage.js', // Main entry point
     output: {
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'dist'),
-        clean: true, // Clean the dist folder before every build
+        clean: true, // Clean the dist folder before building
+    },
+    resolve: {
+        extensions: ['.js', '.json'],
     },
     module: {
         rules: [
             {
-                test: /\.css$/, // Process CSS files
+                test: /\.css$/, // Handle CSS files
                 use: ['style-loader', 'css-loader'],
             },
             {
-                test: /\.(png|jpe?g|gif|svg)$/, // Process image files
+                test: /\.(png|jpe?g|gif|svg)$/i, // Handle image files
                 type: 'asset/resource',
+                generator: {
+                    filename: 'images/[name][ext]', // Output to the images folder
+                },
+            },
+            {
+                test: /\.html$/, // Process and copy HTML files
+                use: ['html-loader'],
             },
         ],
     },
-    resolve: {
-        extensions: ['.js', '.json'], // Resolve these extensions
-    },
     plugins: [
-        new Dotenv(),
+        // Process the main index.html
         new HtmlWebpackPlugin({
-            template: './index.html', // Source HTML file
+            template: './index.html', // Ensure this points to your actual index.html
             filename: 'index.html',
         }),
+        // Copy static files (CSS, images, additional HTML files)
+        new CopyWebpackPlugin({
+            patterns: [
+                { from: 'style', to: 'style' }, // Copy CSS files
+                { from: 'images', to: 'images' }, // Copy images
+                { from: 'javascript', to: 'javascript' }, // Copy javascript folder
+                { from: '*.html', to: '[name][ext]', globOptions: { ignore: ['**/index.html'] } }, // Exclude index.html
+            ],
+        }),
     ],
-    mode: 'development', // Development mode
+    mode: 'development', // Adjust mode as needed (e.g., production)
 };
