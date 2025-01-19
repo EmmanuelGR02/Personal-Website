@@ -1,14 +1,14 @@
 // toISISString()
 // Firebase info
 const firebaseConfig = {
-    apiKey: "AIzaSyB5t42GhysCIOJBGQ0IoHftfe3481h9oLA",
-    authDomain: "personal-website-6c1eb.firebaseapp.com",
-    databaseURL: "https://personal-website-6c1eb-default-rtdb.firebaseio.com",
-    projectId: "personal-website-6c1eb",
-    storageBucket: "personal-website-6c1eb.appspot.com",
-    messagingSenderId: "73260029859",
-    appId: "1:73260029859:web:a3df6e70e6a4ca0b1cec16",
-    measurementId: "G-DB74KTDP29"
+    apiKey: process.env.FIREBASE_API_KEY,
+    authDomain: process.env.FIREBASE_AUTH_DOMAIN,
+    databaseURL: process.env.FIREBASE_DATABASE_URL,
+    projectId: process.env.FIREBASE_PROJECT_ID,
+    storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID,
+    appId: process.env.FIREBASE_APP_ID,
+    measurementId: process.env.FIREBASE_MEASUREMENT_ID
 };
 
 // Initialize firebase db

@@ -7,7 +7,6 @@ Welcome to my personal portfolio website! This project showcases my work, skills
 
 ## Table of Contents
 
-- [Live Demo](#live-demo)
 - [Overview](#overview)
 - [Pages](#pages)
   - [Main Page](#main-page)
@@ -16,8 +15,6 @@ Welcome to my personal portfolio website! This project showcases my work, skills
   - [Contact Page](#contact-page)
 - [Technologies Used](#technologies-used)
 - [Deployment](#deployment)
-- [Getting Started](#getting-started)
-- [License](#license)
 
 ## Overview
 
@@ -39,8 +36,7 @@ This website serves as a digital portfolio showcasing my journey as a Computer S
 
 - Lists the technologies I have learned.
 - Briefly mentions relevant courses and classes that relate to the tech field.
-- Highlights my soft skills (e.g., communication, problem-solving).
-- Shares some personal information (e.g., hobbies, interests).
+- Highlights my soft skills.
 
 ### Projects Page
 
@@ -59,8 +55,8 @@ This website serves as a digital portfolio showcasing my journey as a Computer S
 
 ## Technologies Used
 
-- **HTML5** for the structure of the website.
-- **CSS3** for styling and layout.
+- **HTML** for the structure of the website.
+- **CSS** for styling and layout.
 - **JavaScript** for interactivity and form validation.
 - **Firebase Realtime Database** for storing user messages submitted through the contact form.
 - **Netlify** for deployment and hosting the website.
@@ -70,6 +66,4 @@ This website serves as a digital portfolio showcasing my journey as a Computer S
 The website is deployed using **Netlify** and can be accessed by anyone via the link provided above. Netlify handles continuous deployment whenever changes are pushed to the repository.
 
 
-## License
 
-This project is open-source and available under the [MIT License](LICENSE).
