@@ -1,23 +1,35 @@
-// toISISString()
+import { initializeApp } from 'firebase/app';
+import { getDatabase, ref, set, push } from 'firebase/database';
+
 // Firebase info
 const firebaseConfig = {
-    apiKey: window.NETLIFY_FIREBASE_API_KEY,
-    authDomain: window.NETLIFY_FIREBASE_AUTH_DOMAIN,
-    databaseURL: window.NETLIFY_FIREBASE_DATABASE_URL,
-    projectId: window.NETLIFY_FIREBASE_PROJECT_ID,
-    storageBucket: window.NETLIFY_FIREBASE_STORAGE_BUCKET,
-    messagingSenderId: window.NETLIFY_FIREBASE_MESSAGING_SENDER_ID,
-    appId: window.NETLIFY_FIREBASE_APP_ID,
-    measurementId: window.NETLIFY_FIREBASE_MEASUREMENT_ID
+    apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+    authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+    databaseURL: process.env.REACT_APP_FIREBASE_DATABASE_URL,
+    projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+    storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+    appId: process.env.REACT_APP_FIREBASE_APP_ID,
+    measurementId: process.env.REACT_APP_FIREBASE_MEASUREMENT_ID
 };
 
 // Initialize firebase db
-firebase.initializeApp(firebaseConfig);
+const app = initializeApp(firebaseConfig);
 
-// Reference to db
-var contactForm = firebase.database().ref('contact_form');
+// Reference to the database
+const database = getDatabase(app);
 
-document.getElementById("contact_form").addEventListener("submit", submitForm);
+// DOMContentLoaded event listener
+document.addEventListener('DOMContentLoaded', function () {
+    // Wait until DOM is fully loaded before adding event listeners
+    const contactForm = document.getElementById("contact_form");
+
+    if (contactForm) {
+        contactForm.addEventListener("submit", submitForm);
+    } else {
+        console.error("Contact form not found");
+    }
+});
 
 // save info when form is submitted
 function submitForm(e) {
@@ -30,18 +42,19 @@ function submitForm(e) {
     
     // Reset form
     setTimeout(() => {
-        document.getElementById("contact_form").reset()
+        document.getElementById("contact_form").reset();
     });
 }
 
-// Save info on database
+// Save info to the database
 const saveInfo = (name, lastname, email, message) => {
-    var newContactForm = contactForm.push();
+    const contactFormRef = ref(database, 'contact_form'); // Create reference to 'contact_form'
 
-    // get current date and time
-    var timeStamp = new Date().toISOString('en-US', { hour12: false});
+    const newContactFormRef = push(contactFormRef); // Create a new push reference under 'contact_form'
+    
+    const timeStamp = new Date().toISOString('en-US', { hour12: false });
 
-    newContactForm.set({
+    set(newContactFormRef, {
         name: name,
         lastname: lastname,
         email: email,
@@ -58,4 +71,3 @@ const saveInfo = (name, lastname, email, message) => {
 const getElementVal = (id) => {
     return document.getElementById(id).value;
 };
-
