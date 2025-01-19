@@ -3,9 +3,9 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
-    entry: './javascript/contact.js', // Main entry point
+    entry: './javascript/homepage.js', // Main entry point
     output: {
-        filename: '[name].js', // Use the original name for JavaScript
+        filename: 'bundle.js', // Use 'bundle.js' for JS output
         path: path.resolve(__dirname, 'dist'),
         clean: true, // Clean the dist folder before building
     },
@@ -36,7 +36,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: './index.html', // Ensure this points to your actual index.html
             filename: 'index.html',
-            inject: true, // Automatically inject the JS and CSS files
+            inject: 'body', // Inject JS files at the end of the body
         }),
         // Copy static files (CSS, images, additional HTML files)
         new CopyWebpackPlugin({
@@ -48,5 +48,5 @@ module.exports = {
             ],
         }),
     ],
-    mode: 'development', // Adjust mode as needed (e.g., production)
+    mode: 'development', // Switch to 'development' to prevent optimization like hashing
 };
