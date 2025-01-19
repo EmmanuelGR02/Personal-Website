@@ -1,14 +1,14 @@
 // toISISString()
 // Firebase info
 const firebaseConfig = {
-    apiKey: window.NETLIFY_REACT_APP_FIREBASE_API_KEY,
-    authDomain: window.NETLIFY_REACT_APP_FIREBASE_AUTH_DOMAIN,
-    databaseURL: window.NETLIFY_REACT_APP_FIREBASE_DATABASE_URL,
-    projectId: window.NETLIFY_REACT_APP_FIREBASE_PROJECT_ID,
-    storageBucket: window.NETLIFY_REACT_APP_FIREBASE_STORAGE_BUCKET,
-    messagingSenderId: window.NETLIFY_REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
-    appId: window.NETLIFY_REACT_APP_FIREBASE_APP_ID,
-    measurementId: window.NETLIFY_REACT_APP_FIREBASE_MEASUREMENT_ID
+    apiKey: window.NETLIFY_FIREBASE_API_KEY,
+    authDomain: window.NETLIFY_FIREBASE_AUTH_DOMAIN,
+    databaseURL: window.NETLIFY_FIREBASE_DATABASE_URL,
+    projectId: window.NETLIFY_FIREBASE_PROJECT_ID,
+    storageBucket: window.NETLIFY_FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: window.NETLIFY_FIREBASE_MESSAGING_SENDER_ID,
+    appId: window.NETLIFY_FIREBASE_APP_ID,
+    measurementId: window.NETLIFY_FIREBASE_MEASUREMENT_ID
 };
 
 // Initialize firebase db
