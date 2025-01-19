@@ -2,16 +2,16 @@ const path = require('path');
 const Dotenv = require('dotenv-webpack');
 
 module.exports = {
-    entry: './javascript/contact.js', // Your main JavaScript file
+    entry: './javascript/contact.js', 
     output: {
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'dist'),
     },
     resolve: {
-        extensions: ['.js', '.json'], // Ensures that Webpack resolves the correct extensions
+        extensions: ['.js', '.json'], 
     },
     plugins: [
-        new Dotenv() // Loads environment variables from .env into process.env
+        new Dotenv() // Load environment variables from .env 
     ],
-    mode: 'development', // Use 'production' for live sites
+    mode: 'development', 
 };
