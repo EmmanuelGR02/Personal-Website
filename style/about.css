@@ -297,7 +297,7 @@ body {
 
 /*  *********************** Tool-tip *********************** */
 .toolTip {
-    visibility: hidden; /* Hidden by default */
+    visibility: hidden; 
     width: 150px;
     background-color: black;
     border: 2px solid white;
@@ -307,7 +307,7 @@ body {
     padding: 8px;
     position: absolute;
     z-index: 1;
-    bottom: 125%; /* Position it above the list item */
+    bottom: 125%; 
     left: 50%;
     transform: translateX(-50%);
     opacity: 0;
@@ -324,27 +324,27 @@ body {
     border-style: solid;
     border-color: black transparent transparent transparent;
 }
-
 .green_bullet li:hover .toolTip {
     visibility: visible;
     opacity: 1;
 }
-
 .white_bullet li:hover .toolTip {
     visibility: visible;
     opacity: 1;
 }
-
 .red_bullet li:hover .toolTip {
     visibility: visible;
     opacity: 1;
 }
-
-
 .yellow_bullet li:hover .toolTip {
     visibility: visible;
     opacity: 1;
 }
+ul {
+    margin: .5%;
+    padding: auto;
+}
+
 
 /*  *********************** Arrows *********************** */
 .upArrow {
@@ -461,6 +461,7 @@ body {
 .courseworkContent_wrapper {
     margin-top: -5%;
     line-height: 22px;
+    cursor: pointer;
 }
 @media screen and (max-width: 480px) {
     .courseworkContent_wrapper {
