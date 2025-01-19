@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
-    entry: 'javascript/homepage.js', // Main entry point
+    entry: './javascript/contact.js', // Main entry point
     output: {
         filename: '[name].js', // Use the original name for JavaScript
         path: path.resolve(__dirname, 'dist'),
