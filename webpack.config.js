@@ -54,5 +54,5 @@ module.exports = {
             ],
         }),
     ],
-    mode: 'development', // Switch to 'development' to prevent optimization like hashing
+    mode: 'production', 
 };
