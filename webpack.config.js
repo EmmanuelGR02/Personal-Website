@@ -5,7 +5,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 module.exports = {
     entry: './javascript/homepage.js', // Main entry point
     output: {
-        filename: 'bundle.js', // Use 'bundle.js' for JS output
+        filename: 'javascript/homepage.js', // Output JS file without hashing
         path: path.resolve(__dirname, 'dist'),
         clean: true, // Clean the dist folder before building
     },
@@ -14,10 +14,6 @@ module.exports = {
     },
     module: {
         rules: [
-            {
-                test: /\.css$/, // Handle CSS files
-                use: ['style-loader', 'css-loader'],
-            },
             {
                 test: /\.(png|jpe?g|gif|svg)$/i, // Handle image files
                 type: 'asset/resource',
@@ -34,16 +30,16 @@ module.exports = {
     plugins: [
         // Process the main index.html
         new HtmlWebpackPlugin({
-            template: './index.html', // Ensure this points to your actual index.html
+            template: './index.html', // Use your index.html
             filename: 'index.html',
-            inject: 'body', // Inject JS files at the end of the body
+            inject: false, // Prevent injecting hashed files
         }),
         // Copy static files (CSS, images, additional HTML files)
         new CopyWebpackPlugin({
             patterns: [
                 { from: 'style', to: 'style' }, // Copy CSS files
                 { from: 'images', to: 'images' }, // Copy images
-                { from: 'javascript', to: 'javascript' }, // Copy javascript folder
+                { from: 'javascript', to: 'javascript' }, // Copy JavaScript folder
                 { from: '*.html', to: '[name][ext]', globOptions: { ignore: ['**/index.html'] } }, // Exclude index.html
             ],
         }),
