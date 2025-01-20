@@ -14,7 +14,7 @@ const envKeys = Object.keys(env).reduce((prev, next) => {
 module.exports = {
     entry: './javascript/homepage.js', // Main entry point
     output: {
-        filename: 'javascript/contact.js', // Output JS file without hashing
+        filename: 'bundle.js', // Output JS file without hashing
         path: path.resolve(__dirname, 'dist'),
         clean: true, // Clean the dist folder before building
     },
