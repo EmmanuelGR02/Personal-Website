@@ -11,6 +11,11 @@ body {
     margin: auto;
     overflow: hidden;
 }
+@media (max-width: 480px) {
+    .main_div {
+        width: 92%;
+    }
+}
 
 /********** Div containing the project sliders ***********/
 .project_slider {
@@ -105,6 +110,11 @@ body {
 /********** Project 1 content **********/
 .description_p1 {
     font-size: 20px;
+}
+@media (max-width: 480px) {
+    .description_p1 {
+        font-size: 12px
+    }
 }
 
 
