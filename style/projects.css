@@ -55,5 +55,19 @@ body {
     background-color: white;
 }
 
+/********** project images **********/
+.project_img {
+    width: 100px;
+    height: 200px;
+    max-width: 500px;
+    margin: 10px 0;
+}
+
+.project_video {
+    width: 150px;
+    max-width: 500px;
+    margin: 10px 0;
+}
+
 
   
