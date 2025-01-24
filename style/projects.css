@@ -63,12 +63,16 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
     border: none;
-    padding: 20px;
+    padding: 0px;
     cursor: pointer;
     border-radius: 50%;
-    left: 10px;
-    right: 10px;
     margin-top: 20px;
+}
+.prev_btn_image {
+    margin-right: 20px;
+}
+.next_btn_image {
+    margin-left: 20px;
 }
 
 
@@ -89,9 +93,18 @@ body {
     object-fit: contain;
     display: none;
 }
-
+@media (max-width: 480px) {
+    .project_img, .project_video {
+        width: 50%;
+    }
+}
 .project_img.active, .project_video.active {
     display: block;
+}
+
+/********** Project 1 content **********/
+.description_p1 {
+    font-size: 20px;
 }
 
 
