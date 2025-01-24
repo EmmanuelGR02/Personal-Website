@@ -1,24 +1,65 @@
-const slider = document.querySelector('.project_slider');
-const slides = document.querySelectorAll('.slide');
-const prevBtn = document.querySelector('.prev_btn');
-const nextBtn = document.querySelector('.next_btn');
+// image slider 
+const sliderImages = document.querySelectorAll('.image_slider > *');
+const prevBtnImage = document.querySelector('.prev_btn_image');
+const nextBtnImage = document.querySelector('.next_btn_image');
+let currentImage = 0;
 
-let index = 0;
+function showImage(index) {
+    if (index < 0) {
+        currentImage = sliderImages.length - 1;
+    } else if (index >= sliderImages.length) {
+        currentImage = 0;
+    }
 
-function showSlide(index) {
-  const width = slides[0].clientWidth;
-  slider.style.transform = `translateX(${-index * width}px)`;
+    // Hide all images and display only the current one
+    sliderImages.forEach((img, i) => {
+        img.style.display = i === currentImage ? 'block' : 'none';
+    });
 }
 
-prevBtn.addEventListener('click', () => {
-  index = (index > 0) ? index - 1 : slides.length - 1;
-  showSlide(index);
+// Initialize the image slider by showing the first image
+showImage(currentImage);
+
+// Event listeners for image slider buttons
+prevBtnImage.addEventListener('click', () => {
+    currentImage--;
+    showImage(currentImage);
 });
 
-nextBtn.addEventListener('click', () => {
-  index = (index < slides.length - 1) ? index + 1 : 0;
-  showSlide(index);
+nextBtnImage.addEventListener('click', () => {
+    currentImage++;
+    showImage(currentImage);
 });
 
-// Initialize the first slide
-showSlide(index);
+// project slider
+const projectSlides = document.querySelectorAll('.project_slider .slide');
+const prevBtnProject = document.querySelector('.prev_btn_project');
+const nextBtnProject = document.querySelector('.next_btn_project');
+let currentProject = 0;
+
+function showProject(index) {
+    if (index < 0) {
+        currentProject = projectSlides.length - 1;
+    } else if (index >= projectSlides.length) {
+        currentProject = 0;
+    }
+
+    // Hide all project slides and display only the current one
+    projectSlides.forEach((slide, i) => {
+        slide.style.display = i === currentProject ? 'block' : 'none';
+    });
+}
+
+// Initialize the project slider by showing the first project
+showProject(currentProject);
+
+// Event listeners for project slider buttons
+prevBtnProject.addEventListener('click', () => {
+    currentProject--;
+    showProject(currentProject);
+});
+
+nextBtnProject.addEventListener('click', () => {
+    currentProject++;
+    showProject(currentProject);
+});

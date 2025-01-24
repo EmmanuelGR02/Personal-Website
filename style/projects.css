@@ -20,6 +20,7 @@ body {
 
 .slide {
     min-width: 100%;
+    display: none;
     box-sizing: border-box;
     padding: 20px;
     text-align: center;
@@ -30,8 +31,13 @@ body {
     transition: box-shadow 0.3s, transform 0.3s;
     border-radius: 10px;
 }
+
+.slide.activate {
+    display: block;
+}
   
-.prev-btn, .next-btn {
+/* For project slider buttons */
+.prev_btn_project, .next_btn_project {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -42,32 +48,52 @@ body {
     cursor: pointer;
     border-radius: 50%;
 }
-
-.prev_btn {
+.prev_btn_project {
     left: 10px;
 }
-
-.next_btn {
+.next_btn_project {
     right: 10px;
 }
 
-.prev_btn:hover, .next_btn:hover {
-    background-color: white;
+/* For image slider buttons */
+.prev_btn_image, .next_btn_image {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    left: 10px;
+    right: 10px;
+    margin-top: 20px;
 }
+
 
 /********** project images **********/
-.project_img {
-    width: 100px;
-    height: 200px;
-    max-width: 500px;
-    margin: 10px 0;
+.image_slider {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.project_video {
-    width: 150px;
-    max-width: 500px;
+.project_img, .project_video {
+    width: 20%;
+    height: auto;
+    max-width: 100%;
     margin: 10px 0;
+    object-fit: contain;
+    display: none;
 }
+
+.project_img.active, .project_video.active {
+    display: block;
+}
+
 
 
   
