@@ -1,8 +1,32 @@
 // image slider 
 const sliderImages = document.querySelectorAll('.image_slider > *');
+const imageSlider = document.getElementById('image_slider');
 const prevBtnImage = document.querySelector('.prev_btn_image');
 const nextBtnImage = document.querySelector('.next_btn_image');
+const showBtn = document.getElementById('showProject_images');
+const hideBtn = document.getElementById('hideProject_images');
+const showHideBtnContainer = document.getElementById('showHideImages_container')
 let currentImage = 0;
+
+// image slider is invisible by default
+imageSlider.style.display = 'none';
+showHideBtnContainer.style.display = 'none';
+hideBtn.style.display = 'none';
+
+// show image slider when button is sclicked
+showBtn.addEventListener('click', () => {
+  imageSlider.style.display = 'flex';
+  showHideBtnContainer.style.display = 'flex';
+  hideBtn.style.display = 'flex';
+  showBtn.style.display = 'none';
+})
+
+hideBtn.addEventListener('click', () => {
+  imageSlider.style.display = 'none';
+  showHideBtnContainer.style.display = 'none';
+  hideBtn.style.display = 'none';
+  showBtn.style.display = 'flex';
+})
 
 function showImage(index) {
     if (index < 0) {
