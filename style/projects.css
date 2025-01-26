@@ -20,10 +20,6 @@ body {
     }
 }
 
-.projects_title {
-    margin-left: 10%;
-}
-
 /********** Div containing the project sliders ***********/
 #project_slider {
     display: flex;
@@ -166,6 +162,75 @@ iframe {
     margin-top: 20px;
 }
 
+/********** Div containing title, and two icons **********/
+.icons_div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.projects_title {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.questionMark_img {
+    width: 47px;
+}
+.redCircle_img {
+    border-radius: 60%;
+    width: 47px;
+}
+@media (max-width: 480px) {
+    .redCircle_img {
+        width: 17px;
+    }
+    .questionMark_img {
+        width: 23px;
+    }
+    .projects_title {
+        font-size: 20px;
+    }
+    .toolTip {
+        font-size: 10px;
+    }
+}
 
+/********** Tool tip style **********/
 
-  
+.tooltip_container {
+    position: relative; 
+    display: inline-block;
+}
+
+.tooltip_container:hover .toolTip {
+    visibility: visible;
+    opacity: 1;
+}
+
+.toolTip {
+    visibility: hidden;
+    width: 115px;
+    background-color: black;
+    border: 2px solid white;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    padding: 2px;
+    position: absolute;
+    z-index: 1;
+    bottom: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.toolTip::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
