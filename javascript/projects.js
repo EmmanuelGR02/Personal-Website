@@ -1,4 +1,3 @@
-// image slider 
 const sliderImages = document.querySelectorAll('.image_slider > *');
 const imageSlider = document.getElementById('image_slider');
 const prevBtnImage = document.querySelector('.prev_btn_image');
