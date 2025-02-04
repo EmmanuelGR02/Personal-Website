@@ -36,10 +36,11 @@ function recordView() {
     });
 }
 
-const currentPage = window.location.href;
+// Get the current page URL
+const currentPage = window.location.origin + window.location.pathname;
 
-// Call recordView when the script is executed (website is opened)
-if (currentPage === "https://egr-portfolio.netlify.app/") {
+// Check if the current page is the home page
+if (currentPage === "https://egr-portfolio.netlify.app") {
     recordView();
 }
 
