@@ -36,8 +36,12 @@ function recordView() {
     });
 }
 
+const currentPage = window.location.href;
+
 // Call recordView when the script is executed (website is opened)
-recordView();
+if (currentPage == "https://egr-portfolio.netlify.app/") {
+    recordView();
+}
 
 document.getElementById("contact_form").addEventListener("submit", submitForm);
 
