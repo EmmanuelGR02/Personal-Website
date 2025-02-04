@@ -39,7 +39,7 @@ function recordView() {
 const currentPage = window.location.href;
 
 // Call recordView when the script is executed (website is opened)
-if (currentPage == "https://egr-portfolio.netlify.app/") {
+if (currentPage === "https://egr-portfolio.netlify.app/") {
     recordView();
 }
 
