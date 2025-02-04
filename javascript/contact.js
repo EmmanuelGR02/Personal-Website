@@ -38,11 +38,12 @@ function recordView() {
 
 // Get the current page URL
 const currentPage = window.location.origin + window.location.pathname;
-
+console.log(currentPage);
 // Check if the current page is the home page
 if (currentPage === "https://egr-portfolio.netlify.app") {
     recordView();
 }
+
 
 document.getElementById("contact_form").addEventListener("submit", submitForm);
 
